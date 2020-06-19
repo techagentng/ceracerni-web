@@ -1,0 +1,45 @@
+#loading{
+  animation: wheel 2s ease infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes wheel{
+  from{
+   transform: rotateZ(0deg);
+  
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+
+#dog{
+  animation: dog 1s ease-in-out alternate;
+}
+
+@keyframes dog{
+  from{
+   transform: rotateX(0deg);
+  
+  }
+  to{
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes slide-up{
+  0%{
+      transform: translateY(-15px);
+      opacity: 0;
+      }
+  100%{
+      transform: translateY(0);
+      opacity: 1;
+      }
+}
+
+.slide{
+  animation: slide-up 1s forwards 0s ease;
+}
+

@@ -1,0 +1,274 @@
+.menu {
+  margin-left: -95px;
+  width: 200px;
+  position: absolute;
+  top: 6px;
+  left: 40%;
+  list-style: none;
+  z-index: 3;
+}
+
+.menu > li > a {
+  background: #2d3194;
+  color: white;        
+  display: block;
+  text-align: center;
+  list-style:  none;
+  font-weight: bold;
+  border-radius: 16px;
+  text-align: center;
+  padding: 3px 7px;
+ }
+
+
+.menu ul li a{
+	text-align: left;
+	text-decoration-line: none;
+	margin-top: 4px;
+	color: white;
+    font-family: helvetica;
+}
+
+.menu ul div{
+	margin-top: 50px;
+	list-style:none;
+
+}
+.menu ul li:hover{
+	text-decoration: none;
+}
+.menu li{
+	padding-bottom: 5px;
+}
+.menu li:hover ul {
+  height: 200px;
+  opacity: 1;
+  list-style: none; 
+  animation: bounce-6 3s linear;  
+
+}
+.menu ul li a:hover{
+	text-decoration-line: line-through;
+	color: #000
+}
+
+.menu ul a {
+  display: block;
+  text-align: right;  
+}
+
+.menu >li{
+	display: inline-block;
+}
+.menu >div >li {
+	display: inline;
+}
+.right > li{
+	margin-left: 25px;
+	margin-top: -5px;	
+}
+
+p, h2, h3{
+  color: white;
+}
+form label{
+  color: white;
+}
+.menu-grid-box {
+  background-color: #000;
+  z-index: 3000;
+}
+.header-container a{
+  padding: 1rem 3rem;
+  border: 2px solid white;
+  font-weight: 600;
+  color: white;
+}
+.header-container a:hover{
+  border: 5px solid white;
+  color: black;
+}
+.list-group li a{
+  color: #000;
+}
+
+/*Drawable css*/
+.mobile-wrapper{
+  display: none;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background:  #EC38BC;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(45deg,#03001E,#7303C0 ,  #EC38BC);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(45deg,#03001E,#7303C0 ,   #EC38BC);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+padding: 0 16px;
+position: absolute;
+right: 0;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+/* Media Queries as if i no see am */
+@media only screen and (max-width: 900px) {
+		
+/*sticky social css*/
+ .social-icons {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  z-index: 50;
+}
+.social-icons a {
+  color: #000;
+  text-decoration: none;
+  font-family: roboto condensed;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 125px;
+  height: 40px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: background-color: rgba(200, 200, 200, 0.1);
+  z-index: 45;
+}
+.social-icons a i {
+  margin-right: 5px;
+}
+
+#facebook-button {
+  color: #3b5998;
+  right: -85px;
+  top: 20px;
+}
+
+#facebook-button:hover {
+  right: 0;
+  transition: 0.4s;
+  color: #fff;
+  background-color: #3b5998;
+  
+}
+
+#instagram-button {
+  top: 70px;
+  right: -85px;
+  color: #000;
+}
+#instagram-button:hover {
+  color: #fff;
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  right: 0;
+  transition: 0.4s;
+  
+}
+
+#twitter-button {
+  top: 120px;
+  right: -85px;
+  color: #3b5998;
+}
+#twitter-button:hover {
+  right: 0;
+  transition: 0.4s;
+  background-color: #21a0f1;
+  color: #fff;
+}
+
+div .margin{
+	margin-left: 70px;
+}
+.i.ico-transparent{
+	color: red;
+}
+.gridMe{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.sideButton{
+  width: 120px;
+  height: 40px;
+  background-color: green;
+  display: block;
+}
+.flexit{
+  background-color: orangered;
+}
+section#slider .btn-default{
+	margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 736px) {
+  .menu-grid-box  {
+    display: none;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .mobile-wrapper  {
+    display: block;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .menu-wrapp {
+    display: block;
+  }
+.display-table{
+	  display: none;
+  }
+}

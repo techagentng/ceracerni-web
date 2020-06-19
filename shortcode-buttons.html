@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Smarty - Multipurpose + Admin</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+		
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+	<body class="smoothscroll enable-animation">
+
+		<!-- SLIDE TOP -->
+		<!-- wrapper -->
+		<div id="wrapper">
+
+
+			<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+			
+
+
+			<!-- 
+				PAGE HEADER 
+				
+				CLASSES:
+					.page-header-xs	= 20px margins
+					.page-header-md	= 50px margins
+					.page-header-lg	= 80px margins
+					.page-header-xlg= 130px margins
+					.dark			= dark page header
+
+					.shadow-before-1 	= shadow 1 header top
+					.shadow-after-1 	= shadow 1 header bottom
+					.shadow-before-2 	= shadow 2 header top
+					.shadow-after-2 	= shadow 2 header bottom
+					.shadow-before-3 	= shadow 3 header top
+					.shadow-after-3 	= shadow 3 header bottom
+			-->
+
+			<section>
+				<div class="container">
+
+				<div class="row">
+					
+					<div class="col-md-3 col-sm-3">
+
+						<!-- side navigation -->
+						<div class="side-nav">
+
+							<div class="side-nav-head">
+								<button class="fa fa-bars"></button>
+								<h4>SHORTCODES</h4>
+							</div>
+
+							<ul class="list-group list-unstyled">
+								<li class="list-group-item"><a href="shortcode-animations.html">Animations</a></li>
+								<li class="list-group-item active"><a href="shortcode-buttons.html">Buttons</a></li>
+								<li class="list-group-item"><a href="shortcode-carousel.html">Carousel</a></li>
+								<li class="list-group-item"><a href="shortcode-charts.html">GRAPHS</a></li>
+								<li class="list-group-item"><a href="shortcode-clients.html">Clients</a></li>
+								<li class="list-group-item"><a href="shortcode-columns.html">GRID &amp; COLUMNS</a></li>
+								<li class="list-group-item"><a href="shortcode-counters.html">COUNTERS</a></li>
+								<li class="list-group-item"><a href="shortcode-forms.html">FORM ELEMENTS</a></li>
+								<li class="list-group-item"><a href="shortcode-dividers.html">Dividers</a></li>
+								<li class="list-group-item"><a href="shortcode-icon-boxes.html">Boxes &amp; Icons</a></li>
+								<li class="list-group-item"><a href="shortcode-galleries.html">Galleries</a></li>
+								<li class="list-group-item"><a href="shortcode-headings.html">Heading styles</a></li>
+								<li class="list-group-item"><a href="shortcode-icon-lists.html">Icon lists</a></li>
+								<li class="list-group-item"><a href="shortcode-labels.html">LABELS &amp; BADGES</a></li>
+								<li class="list-group-item"><a href="shortcode-lightbox.html">LIGHTBOX</a></li>
+								<li class="list-group-item"><a href="shortcode-forms-editors.html">HTML EDITORS</a></li>
+								<li class="list-group-item"><a href="shortcode-cards.html">Cards</a></li>
+								<li class="list-group-item"><a href="shortcode-maps.html"><span class="badge badge-success float-right">new</span> MAPS</a></li>
+								<li class="list-group-item"><a href="shortcode-media-embeds.html">Media embeds</a></li>
+								<li class="list-group-item"><a href="shortcode-modals.html">Modals / Popovers / Notifications</a></li>
+								<li class="list-group-item"><a href="shortcode-navigations.html">Navigations</a></li>
+								<li class="list-group-item"><a href="shortcode-paginations.html">Paginations</a></li>
+								<li class="list-group-item"><a href="shortcode-progress-bar.html">PROGRESS BARS</a></li>
+								<li class="list-group-item"><a href="shortcode-widgets.html">WIDGETS</a></li>
+								<li class="list-group-item"><a href="shortcode-pricing.html">Pricing boxes</a></li>
+								<li class="list-group-item"><a href="shortcode-process-steps.html">Process steps</a></li>
+								<li class="list-group-item"><a href="shortcode-callouts.html">CALLOUTS</a></li>
+								<li class="list-group-item"><a href="shortcode-info-bars.html">INFO BARS</a></li>
+								<li class="list-group-item"><a href="shortcode-blockquotes.html">Blockquotes</a></li>
+								<li class="list-group-item"><a href="shortcode-responsive.html">Responsive</a></li>
+								<li class="list-group-item"><a href="shortcode-sections.html">Sections</a></li>
+								<li class="list-group-item"><a href="shortcode-social-icons.html">Social icons</a></li>
+								<li class="list-group-item"><a href="shortcode-alerts.html">Alerts</a></li>
+								<li class="list-group-item"><a href="shortcode-styled-icons.html">Styled icons</a></li>
+								<li class="list-group-item"><a href="shortcode-tables.html">Tables</a></li>
+								<li class="list-group-item"><a href="shortcode-tabs.html">Tabs</a></li>
+								<li class="list-group-item"><a href="shortcode-testimonials.html">Testimonials</a></li>
+								<li class="list-group-item"><a href="shortcode-thumbnails.html">Thumbnails</a></li>
+								<li class="list-group-item"><a href="shortcode-toggles.html">Toggles</a></li>
+							</ul>
+
+						</div>
+						<!-- /side navigation -->
+
+					</div>
+
+					<div class="col-md-9 col-sm-9">
+
+						<div class="bg-light p-15 mb-60 shadow-1">
+							New: available classes for any button <br>
+							<b>.btn-round</b> <br>
+							<b>.btn-shadow-1</b><br>
+						</div>
+
+						<!-- Buttons 1 -->
+						<div class="row">
+							<div class="col-md-12">
+
+								<!-- Standard button -->
+								<button type="button" class="btn btn-default btn-shadow-1">Default</button>
+
+								<!-- Primary -->
+								<button type="button" class="btn btn-primary btn-shadow-1">Primary</button>
+
+								<!-- Secondary -->
+								<button type="button" class="btn btn-secondary btn-shadow-1">Secondary</button>
+
+								<!-- Success -->
+								<button type="button" class="btn btn-success btn-shadow-1">Success</button>
+
+								<!-- Info -->
+								<button type="button" class="btn btn-info btn-shadow-1">Info</button>
+
+								<!-- Warning -->
+								<button type="button" class="btn btn-warning btn-shadow-1">Warning</button>
+
+								<!-- Danger -->
+								<button type="button" class="btn btn-danger btn-shadow-1">Danger</button>
+
+								<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+								<button type="button" class="btn btn-link btn-shadow-1">Link Button</button>
+
+
+								<br><br>
+
+
+								<!-- Standard button -->
+								<button type="button" class="btn btn-default btn-round btn-shadow-1">Default</button>
+
+								<!-- Primary -->
+								<button type="button" class="btn btn-primary btn-round btn-shadow-1">Primary</button>
+
+								<!-- Secondary -->
+								<button type="button" class="btn btn-secondary btn-round btn-shadow-1">Secondary</button>
+
+								<!-- Success -->
+								<button type="button" class="btn btn-success btn-round btn-shadow-1">Success</button>
+
+								<!-- Info -->
+								<button type="button" class="btn btn-info btn-round btn-shadow-1">Info</button>
+
+								<!-- Warning -->
+								<button type="button" class="btn btn-warning btn-round btn-shadow-1">Warning</button>
+
+								<!-- Danger -->
+								<button type="button" class="btn btn-danger btn-round btn-shadow-1">Danger</button>
+
+
+<!-- pre code -->
+<div class="text-left mt-20">
+<a href="javascript:;" onclick="jQuery('#pre-1').slideToggle();">Show Code</a>
+</div>
+<pre id="pre-1" class="text-left rad-0 text-danger hide">
+<span class="d-block text-info ">NOTE: add to any button: 
+	<b>.btn-round</b> 
+	<b>.btn-shadow-1</b>
+</span>
+
+<span class="text-success">&lt;!-- Default --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-default</em></b>"&gt;Default&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Primary --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-primary</em></b>"&gt;Primary&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Secondary --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-secondary</em></b>"&gt;Secondary&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Success --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-success</em></b>"&gt;Success&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Info --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-info</em></b>"&gt;Info&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Warning --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-warning</em></b>"&gt;Warning&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Danger --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-danger</em></b>"&gt;Danger&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-link</em></b>"&gt;Link Button&lt;/button&gt;
+</pre>
+<!-- /pre code -->
+
+
+							</div>
+						</div>
+
+
+						<hr />
+
+
+						<!-- Buttons 2 -->
+						<div class="row">
+							<div class="col-md-12">
+
+								<!-- Primary -->
+								<button type="button" class="btn btn-outline-primary">Primary</button>
+
+								<!-- Secondary -->
+								<button type="button" class="btn btn-outline-secondary">Secondary</button>
+
+								<!-- Success -->
+								<button type="button" class="btn btn-outline-success">Success</button>
+
+								<!-- Info -->
+								<button type="button" class="btn btn-outline-info">Info</button>
+
+								<!-- Warning -->
+								<button type="button" class="btn btn-outline-warning">Warning</button>
+
+								<!-- Danger -->
+								<button type="button" class="btn btn-outline-danger">Danger</button>
+
+								<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+								<button type="button" class="btn btn-outline-link">Link Button</button>
+
+								<br><br>
+
+								<!-- Primary -->
+								<button type="button" class="btn btn-round btn-outline-primary">Primary</button>
+
+								<!-- Secondary -->
+								<button type="button" class="btn btn-round btn-outline-secondary">Secondary</button>
+
+								<!-- Success -->
+								<button type="button" class="btn btn-round btn-outline-success">Success</button>
+
+								<!-- Info -->
+								<button type="button" class="btn btn-round btn-outline-info">Info</button>
+
+								<!-- Warning -->
+								<button type="button" class="btn btn-round btn-outline-warning">Warning</button>
+
+								<!-- Danger -->
+								<button type="button" class="btn btn-round btn-outline-danger">Danger</button>
+
+<!-- pre code -->
+<div class="text-left mt-20">
+<a href="javascript:;" onclick="jQuery('#pre-1o').slideToggle();">Show Code</a>
+</div>
+<pre id="pre-1o" class="text-left rad-0 text-danger hide">
+<span class="d-block text-center">NOTE: add <b>.btn-round</b> class to any button</span>
+
+<span class="text-success">&lt;!-- Primary --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-outline-primary</em></b>"&gt;Primary&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Secondary --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-outline-secondary</em></b>"&gt;Secondary&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Success --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-outline-success</em></b>"&gt;Success&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Info --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-outline-info</em></b>"&gt;Info&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Warning --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-outline-warning</em></b>"&gt;Warning&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Danger --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-outline-danger</em></b>"&gt;Danger&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-outline-link</em></b>"&gt;Link Button&lt;/button&gt;
+</pre>
+<!-- /pre code -->
+
+
+							</div>
+						</div>
+
+
+						<hr />
+
+
+						<div class="row">
+							<div class="col-md-12">
+
+								<p>Fancy larger or smaller buttons? Add <code>.btn-lg</code>, <code>.btn-sm</code> for additional sizes.</p>
+								
+								<p class="mb-6">
+									<!-- Large button -->
+									<button type="button" class="btn btn-primary btn-lg">Large button</button>
+									<button type="button" class="btn btn-primary">Default button</button>
+									<button type="button" class="btn btn-primary btn-sm">Small button</button>
+								</p>
+
+								<p>
+									<!-- Large button -->
+									<button type="button" class="btn btn-primary btn-round btn-lg">Large button</button>
+									<button type="button" class="btn btn-primary btn-round">Default button</button>
+									<button type="button" class="btn btn-primary btn-round btn-sm">Small button</button>
+								</p>
+
+								<button type="button" class="btn btn-primary btn-lg btn-block btn-shadow-1">Block level button</button>
+								<button type="button" class="btn btn-primary btn-lg btn-block btn-shadow-1 btn-round">Block level button</button>
+
+
+<!-- pre code -->
+<div class="text-left mt-20">
+<a href="javascript:;" onclick="jQuery('#pre-2').slideToggle();">Show Code</a>
+</div>
+<pre id="pre-2" class="text-left rad-0 text-danger hide">
+
+<span class="text-success">&lt;!-- Large button --&gt;</span>
+&lt;button type="button" class="btn btn-primary btn-lg"&gt;Large button&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Default (medium) button --&gt;</span>
+&lt;button type="button" class="btn btn-primary"&gt;Default button&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Small button --&gt;</span>
+&lt;button type="button" class="btn btn-primary btn-sm"&gt;Small button&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Block level button (full width) --&gt;</span>
+&lt;button type="button" class="btn btn-default btn-lg btn-block"&gt;Block level button&lt;/button&gt;
+</pre>
+<!-- /pre code -->
+
+
+							</div>
+						</div>
+
+
+						<hr />
+
+
+						<!-- Buttons 2 -->
+						<div class="row">
+							<div class="col-md-12">
+
+								<h4>Standard Buttons</h4>
+								<div class="dropup">
+
+									  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Default </button>
+									  <div class="dropdown-menu">
+										<a class="dropdown-item" href="#"><i class="fa fa-edit"></i> Action</a>
+										<a class="dropdown-item" href="#"><i class="fa fa-question-circle"></i> Another action</a>
+										<a class="dropdown-item" href="#"><i class="fa fa-print"></i> Something else here</a>
+										<a class="dropdown-item" href="#"><i class="fa fa-cogs"></i> Separated link</a>
+									  </div>
+
+									  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Primary </button>
+									  <div class="dropdown-menu">
+										<a class="dropdown-item" href="#"><i class="fa fa-edit"></i> Action</a>
+										<a class="dropdown-item" href="#"><i class="fa fa-question-circle"></i> Another action</a>
+										<a class="dropdown-item" href="#"><i class="fa fa-print"></i> Something else here</a>
+										<a class="dropdown-item" href="#"><i class="fa fa-cogs"></i> Separated link</a>
+									  </div>
+
+									  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success </button>
+									  <ul class="dropdown-menu">
+										<li class="dropdown-item"><a href="#"><i class="fa fa-edit"></i> Action</a></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-question-circle"></i> Another action</a></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-print"></i> Something else here</a></li>
+										<li class="dropdown-item divider"></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-cogs"></i> Separated link</a></li>
+									  </ul>
+
+									  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Info </button>
+									  <ul class="dropdown-menu">
+										<li class="dropdown-item"><a href="#"><i class="fa fa-edit"></i> Action</a></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-question-circle"></i> Another action</a></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-print"></i> Something else here</a></li>
+										<li class="dropdown-item divider"></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-cogs"></i> Separated link</a></li>
+									  </ul>
+
+									  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Warning </button>
+									  <ul class="dropdown-menu">
+										<li class="dropdown-item"><a href="#"><i class="fa fa-edit"></i> Action</a></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-question-circle"></i> Another action</a></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-print"></i> Something else here</a></li>
+										<li class="dropdown-item divider"></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-cogs"></i> Separated link</a></li>
+									  </ul>
+
+									  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Danger </button>
+									  <ul class="dropdown-menu">
+										<li class="dropdown-item"><a href="#"><i class="fa fa-edit"></i> Action</a></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-question-circle"></i> Another action</a></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-print"></i> Something else here</a></li>
+										<li class="dropdown-item divider"></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-cogs"></i> Separated link</a></li>
+									  </ul>
+
+								</div>
+
+<!-- pre code -->
+<div class="text-left mt-20">
+<a href="javascript:;" onclick="jQuery('#pre-a').slideToggle();">Show Code</a>
+</div>
+<pre id="pre-a" class="text-left rad-0 text-danger hide">
+<span class="text-success">&lt;-- 
+<strong class="text-warning">AVAILABLE CLASSES</strong>
+btn-primary
+btn-danger
+btn-warning
+btn-info
+btn-default
+--&gt;</span>
+&lt;div class="btn-group"&gt;
+&lt;button type="button" class="btn <strong class="text-warning">btn-primary</strong> dropdown-toggle" data-toggle="dropdown"&gt;Default &lt;/button&gt;
+&lt;ul class="dropdown-menu"&gt;
+&lt;li class="dropdown-item"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-edit"&gt;&lt;/i&gt; Action&lt;/a&gt;&lt;/li&gt;
+&lt;li class="dropdown-item"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-question-circle"&gt;&lt;/i&gt; Another action&lt;/a&gt;&lt;/li&gt;
+&lt;li class="dropdown-item"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-print"&gt;&lt;/i&gt; Something else here&lt;/a&gt;&lt;/li&gt;
+&lt;li class="dropdown-item divider"&gt;&lt;/li&gt;
+&lt;li class="dropdown-item"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-cogs"&gt;&lt;/i&gt; Separated link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+<!-- /pre code -->
+
+
+								<hr />
+
+								<h4>Split Buttons</h4>
+
+								<div class="dropdown">
+
+									<div class="btn-group">
+									  <button type="button" class="btn btn-default">Default</button>
+									  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+									  </button>
+									  <ul class="dropdown-menu">
+										<li class="dropdown-item"><a href="#"><i class="fa fa-edit"></i> Action</a></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-question-circle"></i> Another action</a></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-print"></i> Something else here</a></li>
+										<li class="dropdown-item divider"></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-cogs"></i> Separated link</a></li>
+									  </ul>
+									</div><!-- /btn-group -->
+
+									<div class="btn-group">
+									  <button type="button" class="btn btn-primary">Primary</button>
+									  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+									  </button>
+									  <ul class="dropdown-menu">
+										<li class="dropdown-item"><a href="#"><i class="fa fa-edit"></i> Action</a></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-question-circle"></i> Another action</a></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-print"></i> Something else here</a></li>
+										<li class="dropdown-item divider"></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-cogs"></i> Separated link</a></li>
+									  </ul>
+									</div><!-- /btn-group -->
+
+									<div class="btn-group">
+									  <button type="button" class="btn btn-success">Success</button>
+									  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+									  </button>
+									  <ul class="dropdown-menu">
+										<li class="dropdown-item"><a href="#"><i class="fa fa-edit"></i> Action</a></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-question-circle"></i> Another action</a></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-print"></i> Something else here</a></li>
+										<li class="dropdown-item divider"></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-cogs"></i> Separated link</a></li>
+									  </ul>
+									</div><!-- /btn-group -->
+
+									<div class="btn-group">
+									  <button type="button" class="btn btn-info">Info</button>
+									  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+									  </button>
+									  <ul class="dropdown-menu">
+										<li class="dropdown-item"><a href="#"><i class="fa fa-edit"></i> Action</a></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-question-circle"></i> Another action</a></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-print"></i> Something else here</a></li>
+										<li class="dropdown-item divider"></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-cogs"></i> Separated link</a></li>
+									  </ul>
+									</div><!-- /btn-group -->
+
+									<div class="btn-group">
+									  <button type="button" class="btn btn-warning">Warning</button>
+									  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+									  </button>
+									  <ul class="dropdown-menu">
+										<li class="dropdown-item"><a href="#"><i class="fa fa-edit"></i> Action</a></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-question-circle"></i> Another action</a></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-print"></i> Something else here</a></li>
+										<li class="dropdown-item divider"></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-cogs"></i> Separated link</a></li>
+									  </ul>
+									</div><!-- /btn-group -->
+
+									<div class="btn-group">
+									  <button type="button" class="btn btn-danger">Danger</button>
+									  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+									  </button>
+									  <ul class="dropdown-menu">
+										<li class="dropdown-item"><a href="#"><i class="fa fa-edit"></i> Action</a></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-question-circle"></i> Another action</a></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-print"></i> Something else here</a></li>
+										<li class="dropdown-item divider"></li>
+										<li class="dropdown-item"><a href="#"><i class="fa fa-cogs"></i> Separated link</a></li>
+									  </ul>
+									</div><!-- /btn-group -->
+
+								</div>
+
+<!-- pre code -->
+<div class="text-left mt-20">
+<a href="javascript:;" onclick="jQuery('#pre-b').slideToggle();">Show Code</a>
+</div>
+<pre id="pre-b" class="text-left rad-0 text-danger hide">
+<span class="text-success">&lt;-- 
+<strong class="text-warning">AVAILABLE CLASSES</strong>
+btn-primary
+btn-danger
+btn-warning
+btn-info
+btn-default
+--&gt;</span>
+&lt;div class="btn-group"&gt;
+&lt;button type="button" class="btn <strong class="text-warning">btn-primary</strong>"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="btn <strong class="text-warning">btn-primary</strong> dropdown-toggle" data-toggle="dropdown"&gt;&lt;/button&gt;
+&lt;ul class="dropdown-menu"&gt;
+&lt;li class="dropdown-item"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-edit"&gt;&lt;/i&gt; Action&lt;/a&gt;&lt;/li&gt;
+&lt;li class="dropdown-item"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-question-circle"&gt;&lt;/i&gt; Another action&lt;/a&gt;&lt;/li&gt;
+&lt;li class="dropdown-item"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-print"&gt;&lt;/i&gt; Something else here&lt;/a&gt;&lt;/li&gt;
+&lt;li class="dropdown-item divider"&gt;&lt;/li&gt;
+&lt;li class="dropdown-item"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-cogs"&gt;&lt;/i&gt; Separated link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+<!-- /pre code -->
+
+
+
+								<hr />
+
+								<h4>Dropup Variation</h4>
+								<p>Trigger dropdown menus above elements by adding <code>.dropup</code> to the parent.</p>
+
+								<div class="btn-group dropup">
+								  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Default </button>
+								  <ul class="dropdown-menu">
+									<li class="dropdown-item"><a href="#"><i class="fa fa-edit"></i> Action</a></li>
+									<li class="dropdown-item"><a href="#"><i class="fa fa-question-circle"></i> Another action</a></li>
+									<li class="dropdown-item"><a href="#"><i class="fa fa-print"></i> Something else here</a></li>
+									<li class="dropdown-item divider"></li>
+									<li class="dropdown-item"><a href="#"><i class="fa fa-cogs"></i> Separated link</a></li>
+								  </ul>
+								</div><!-- /btn-group -->
+								<div class="btn-group dropup">
+								  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Primary </button>
+								  <ul class="dropdown-menu">
+									<li class="dropdown-item"><a href="#"><i class="fa fa-edit"></i> Action</a></li>
+									<li class="dropdown-item"><a href="#"><i class="fa fa-question-circle"></i> Another action</a></li>
+									<li class="dropdown-item"><a href="#"><i class="fa fa-print"></i> Something else here</a></li>
+									<li class="dropdown-item divider"></li>
+									<li class="dropdown-item"><a href="#"><i class="fa fa-cogs"></i> Separated link</a></li>
+								  </ul>
+								</div><!-- /btn-group -->
+
+								&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<div class="btn-group dropup">
+									<button type="button" class="btn btn-default">Dropup</button>
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+										
+										<span class="sr-only">Toggle Dropdown</span>
+									</button>
+									<ul class="dropdown-menu">
+									<li class="dropdown-item"><a href="#"><i class="fa fa-edit"></i> Action</a></li>
+									<li class="dropdown-item"><a href="#"><i class="fa fa-question-circle"></i> Another action</a></li>
+									<li class="dropdown-item"><a href="#"><i class="fa fa-print"></i> Something else here</a></li>
+									<li class="dropdown-item divider"></li>
+									<li class="dropdown-item"><a href="#"><i class="fa fa-cogs"></i> Separated link</a></li>
+									</ul>
+								</div><!-- /btn-group -->
+
+								<div class="btn-group dropup">
+									<button type="button" class="btn btn-primary">Right dropup</button>
+									<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+										
+										<span class="sr-only">Toggle Dropdown</span>
+									</button>
+									<ul class="dropdown-menu dropdown-menu-right">
+									<li class="dropdown-item"><a href="#"><i class="fa fa-edit"></i> Action</a></li>
+									<li class="dropdown-item"><a href="#"><i class="fa fa-question-circle"></i> Another action</a></li>
+									<li class="dropdown-item"><a href="#"><i class="fa fa-print"></i> Something else here</a></li>
+									<li class="dropdown-item divider"></li>
+									<li class="dropdown-item"><a href="#"><i class="fa fa-cogs"></i> Separated link</a></li>
+									</ul>
+								</div><!-- /btn-group -->
+
+
+<!-- pre code -->
+<div class="text-left mt-20">
+<a href="javascript:;" onclick="jQuery('#pre-c').slideToggle();">Show Code</a>
+</div>
+<pre id="pre-c" class="text-left rad-0 text-danger hide">
+<span class="text-success">&lt;-- 
+<strong class="text-warning">AVAILABLE CLASSES</strong>
+btn-primary
+btn-danger
+btn-warning
+btn-info
+btn-default
+--&gt;</span>
+
+&lt;div class="btn-group dropup"&gt;
+&lt;button type="button" class="btn <strong class="text-warning">btn-primary</strong> dropdown-toggle" data-toggle="dropdown"&gt;&lt;ul class="dropdown-menu"&gt;
+&lt;li class="dropdown-item"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-edit"&gt;&lt;/i&gt; Action&lt;/a&gt;&lt;/li&gt;
+&lt;li class="dropdown-item"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-question-circle"&gt;&lt;/i&gt; Another action&lt;/a&gt;&lt;/li&gt;
+&lt;li class="dropdown-item"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-print"&gt;&lt;/i&gt; Something else here&lt;/a&gt;&lt;/li&gt;
+&lt;li class="dropdown-item divider"&gt;&lt;/li&gt;
+&lt;li class="dropdown-item"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-cogs"&gt;&lt;/i&gt; Separated link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+<!-- /pre code -->
+
+
+
+							</div>
+						</div>
+						<!-- /Buttons 2 -->
+
+
+
+						<!-- Buttons 3 -->
+						<div class="row">
+							<div class="col-md-12">
+
+								<h4>3D Buttons</h4>
+								<!-- Standard button -->
+								<button type="button" class="btn btn-default btn-3d">Default</button>
+
+								<!-- Primary -->
+								<button type="button" class="btn btn-primary btn-3d">Primary</button>
+
+								<!-- Success -->
+								<button type="button" class="btn btn-success btn-3d">Success</button>
+
+								<!-- Info -->
+								<button type="button" class="btn btn-info btn-3d">Info</button>
+
+								<!-- Warning -->
+								<button type="button" class="btn btn-warning btn-3d">Warning</button>
+
+								<!-- Danger -->
+								<button type="button" class="btn btn-danger btn-3d">Danger</button>
+
+<!-- pre code -->
+<div class="text-left mt-20">
+<a href="javascript:;" onclick="jQuery('#pre-3').slideToggle();">Show Code</a>
+</div>
+<pre id="pre-3" class="text-left rad-0 text-danger hide">
+<span class="text-success">&lt;!-- Default --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-default btn-3d</em></b>"&gt;Default&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Primary --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-primary btn-3d</em></b>"&gt;Primary&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Success --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-success btn-3d</em></b>"&gt;Success&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Info --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-info btn-3d</em></b>"&gt;Info&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Warning --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-warning btn-3d</em></b>"&gt;Warning&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Danger --&gt;</span>
+&lt;button type="button" class="<b><em>btn btn-danger btn-3d</em></b>"&gt;Danger&lt;/button&gt;
+</pre>
+<!-- /pre code -->
+
+								<hr />
+
+								<h4>Featured Buttons</h4>
+
+								<!-- 
+									Icon Position [also available on RTL]
+									.btn-inverse = inverse icon [left|right]
+									
+									Colors:
+									.btn-default
+									.btn-success
+									.btn-danger
+									.btn-warning
+									.btn-info
+
+									.btn-red
+									.btn-teal
+									.btn-yellow
+									.btn-green
+									.btn-brown
+									.btn-aqua
+									.btn-lime
+									.btn-purple
+									.btn-leaf
+									.btn-pink
+									.btn-dirtygreen
+									.btn-blue
+									.btn-amber
+									.btn-black
+									.btn-white
+								-->
+								<div class="row">
+									<div class="col-sm-4">
+										<a href="#" class="btn btn-default btn-featured btn-inverse">
+											<span>FREE WORLWIDE SHIPPING</span>
+											<i class="et-pricetags"></i>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="btn btn-danger btn-featured">
+											<span>SALE UP TO 70% OFF</span>
+											<i class="et-trophy"></i>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="btn btn-warning btn-featured">
+											<span>GIVEAWAY EVERY WEEK</span>
+											<i class="et-strategy"></i>
+										</a>
+									</div>
+								</div>
+
+
+								<div class="row mt-30">
+									<div class="col-sm-4">
+										<a href="#" class="btn btn-default btn-featured btn-inverse btn-round">
+											<span>FREE WORLWIDE SHIPPING</span>
+											<i class="et-pricetags"></i>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="btn btn-danger btn-featured btn-round">
+											<span>SALE UP TO 70% OFF</span>
+											<i class="et-trophy"></i>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="btn btn-warning btn-featured btn-round">
+											<span>GIVEAWAY EVERY WEEK</span>
+											<i class="et-strategy"></i>
+										</a>
+									</div>
+								</div>
+
+
+
+
+								<div class="row mt-30">
+									<div class="col-sm-4">
+										<a href="#" class="btn btn-default btn-featured btn-inverse btn-round">
+											<span>FREE WORLWIDE SHIPPING</span>
+											<i class="et-pricetags btn-round"></i>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="btn btn-danger btn-featured btn-round">
+											<span>SALE UP TO 70% OFF</span>
+											<i class="et-trophy btn-round"></i>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="btn btn-warning btn-featured btn-round">
+											<span>GIVEAWAY EVERY WEEK</span>
+											<i class="et-heart btn-round"></i>
+										</a>
+									</div>
+								</div>
+
+
+<!-- pre code -->
+<div class="text-left mt-20">
+<a href="javascript:;" onclick="jQuery('#pre-5fb').slideToggle();">Show Code</a>
+</div>
+<pre id="pre-5fb" class="text-left rad-0 text-danger hide">
+<span class="text-success">&lt;!--
+AVAILABLE COLORS
+
+.btn-default
+.btn-success
+.btn-danger
+.btn-warning
+.btn-info
+
+.btn-red
+.btn-teal
+.btn-yellow
+.btn-green
+.btn-brown
+.btn-aqua
+.btn-lime
+.btn-purple
+.btn-leaf
+.btn-pink
+.btn-dirtygreen
+.btn-blue
+.btn-amber
+.btn-black
+.btn-white
+
+<b>.btn-round  - rounded</b>
+
+
+ICON POSITION [also available on RTL]
+.btn-inverse = inverse icon [left|right]
+--&gt;</span>
+&lt;a href="#" class="btn btn-featured <b>btn-default</b>"&gt;
+	&lt;span&gt;FREE WORLWIDE SHIPPING&lt;/span&gt;
+	&lt;i class="et-megaphone"&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;a href="#" class="btn btn-featured btn-inverse <b>btn-default</b>"&gt;
+	&lt;span&gt;FREE WORLWIDE SHIPPING&lt;/span&gt;
+	&lt;i class="et-megaphone"&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+
+
+&lt;a href="#" class="btn btn-featured <b>btn-round</b> <b>btn-default</b>"&gt;
+	&lt;span&gt;FREE WORLWIDE SHIPPING&lt;/span&gt;
+	&lt;i class="et-megaphone"&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;a href="#" class="btn btn-featured <b>btn-round</b> <b>btn-default</b>"&gt;
+	&lt;span&gt;FREE WORLWIDE SHIPPING&lt;/span&gt;
+	&lt;i class="et-megaphone <b>btn-round</b>"&gt;&lt;/i&gt;
+&lt;/a&gt;
+</pre>
+<!-- /pre code -->
+
+
+								<hr />
+
+								<h4>Color 3D Buttons</h4>
+								<a href="#" class="btn btn-3d btn-red"><i class="et-megaphone"></i>Red</a>
+								<a href="#" class="btn btn-3d btn-teal"><i class="et-beaker"></i>Teal</a>
+								<a href="#" class="btn btn-3d btn-yellow btn-light"><i class="et-beaker"></i>Yellow</a>
+								<a href="#" class="btn btn-3d btn-green"><i class="et-trophy"></i>Green</a>
+								<a href="#" class="btn btn-3d btn-brown"><i class="et-basket"></i>Brown</a>
+								<a href="#" class="btn btn-3d btn-aqua"><i class="et-key"></i>Aqua</a>
+								<a href="#" class="btn btn-3d btn-purple"><i class="et-tools"></i>Purple</a>
+								<a href="#" class="btn btn-3d btn-leaf"><i class="et-tools-2"></i>Leaf</a>
+								<a href="#" class="btn btn-3d btn-pink"><i class="et-shield"></i>Pink</a>
+								<a href="#" class="btn btn-3d btn-blue"><i class="et-strategy"></i>Blue</a>
+								<a href="#" class="btn btn-3d btn-dirtygreen"><i class="et-caution"></i>Dirty Green</a>
+								<a href="#" class="btn btn-3d btn-amber"><i class="et-heart"></i>Amber</a>
+								<a href="#" class="btn btn-3d btn-black"><i class="et-clock"></i>Black</a>
+								<a href="#" class="btn btn-3d btn-white"><i class="et-chat"></i>White</a>
+
+								<br><br>
+
+								<a href="#" class="btn btn-3d btn-round btn-red"><i class="et-megaphone"></i>Red</a>
+								<a href="#" class="btn btn-3d btn-round btn-teal"><i class="et-beaker"></i>Teal</a>
+								<a href="#" class="btn btn-3d btn-round btn-yellow btn-light"><i class="et-beaker"></i>Yellow</a>
+								<a href="#" class="btn btn-3d btn-round btn-green"><i class="et-trophy"></i>Green</a>
+								<a href="#" class="btn btn-3d btn-round btn-brown"><i class="et-basket"></i>Brown</a>
+								<a href="#" class="btn btn-3d btn-round btn-aqua"><i class="et-key"></i>Aqua</a>
+								<a href="#" class="btn btn-3d btn-round btn-purple"><i class="et-tools"></i>Purple</a>
+								<a href="#" class="btn btn-3d btn-round btn-leaf"><i class="et-tools-2"></i>Leaf</a>
+								<a href="#" class="btn btn-3d btn-round btn-pink"><i class="et-shield"></i>Pink</a>
+								<a href="#" class="btn btn-3d btn-round btn-blue"><i class="et-strategy"></i>Blue</a>
+								<a href="#" class="btn btn-3d btn-round btn-dirtygreen"><i class="et-caution"></i>Dirty Green</a>
+								<a href="#" class="btn btn-3d btn-round btn-amber"><i class="et-heart"></i>Amber</a>
+								<a href="#" class="btn btn-3d btn-round btn-black"><i class="et-clock"></i>Black</a>
+								<a href="#" class="btn btn-3d btn-round btn-white"><i class="et-chat"></i>White</a>
+
+<!-- pre code -->
+<div class="text-left mt-20">
+<a href="javascript:;" onclick="jQuery('#pre-4').slideToggle();">Show Code</a>
+</div>
+<pre id="pre-4" class="text-left rad-0 text-danger hide">
+<span class="text-success">&lt;!--
+AVAILABLE COLORS
+
+.btn-default
+.btn-success
+.btn-danger
+.btn-warning
+.btn-info
+
+.btn-red
+.btn-teal
+.btn-yellow
+.btn-green
+.btn-brown
+.btn-aqua
+.btn-lime
+.btn-purple
+.btn-leaf
+.btn-pink
+.btn-dirtygreen
+.btn-blue
+.btn-amber
+.btn-black
+.btn-white
+
+--&gt;</span>
+
+&lt;a href="#" class="btn btn-3d <b>btn-red</b>"&gt;&lt;i class="et-megaphone"&gt;&lt;/i&gt;Red&lt;/a&gt;
+&lt;a href="#" class="btn btn-3d <b>btn-teal</b>"&gt;&lt;i class="et-beaker"&gt;&lt;/i&gt;Teal&lt;/a&gt;
+&lt;a href="#" class="btn btn-3d <b>btn-yellow</b>"&gt;&lt;i class="icon-beaker"&gt;&lt;/i&gt;Yellow&lt;/a&gt;
+&lt;a href="#" class="btn btn-3d <b>btn-green</b>"&gt;&lt;i class="et-trophy"&gt;&lt;/i&gt;Green&lt;/a&gt;
+&lt;a href="#" class="btn btn-3d <b>btn-brown</b>"&gt;&lt;i class="et-basket"&gt;&lt;/i&gt;Brown&lt;/a&gt;
+&lt;a href="#" class="btn btn-3d <b>btn-aqua</b>"&gt;&lt;i class="et-key"&gt;&lt;/i&gt;Aqua&lt;/a&gt;
+&lt;a href="#" class="btn btn-3d <b>btn-purple</b>"&gt;&lt;i class="et-tools"&gt;&lt;/i&gt;Purple&lt;/a&gt;
+&lt;a href="#" class="btn btn-3d <b>btn-leaf</b>"&gt;&lt;i class="et-tools-2"&gt;&lt;/i&gt;Leaf&lt;/a&gt;
+&lt;a href="#" class="btn btn-3d <b>btn-pink</b>"&gt;&lt;i class="et-shield"&gt;&lt;/i&gt;Pink&lt;/a&gt;
+&lt;a href="#" class="btn btn-3d <b>btn-blue</b>"&gt;&lt;i class="et-strategy"&gt;&lt;/i&gt;Blue&lt;/a&gt;
+&lt;a href="#" class="btn btn-3d <b>btn-dirtygreen</b>"&gt;&lt;i class="et-caution"&gt;&lt;/i&gt;Dirty Green&lt;/a&gt;
+&lt;a href="#" class="btn btn-3d <b>btn-amber</b>"&gt;&lt;i class="et-heart"&gt;&lt;/i&gt;Amber&lt;/a&gt;
+&lt;a href="#" class="btn btn-3d <b>btn-black</b>"&gt;&lt;i class="et-clock"&gt;&lt;/i&gt;Black&lt;/a&gt;
+&lt;a href="#" class="btn btn-3d <b>btn-white</b>"&gt;&lt;i class="et-chat"&gt;&lt;/i&gt;White&lt;/a&gt;
+</pre>
+<!-- /pre code -->
+
+
+								<hr />
+
+								<h4>Color 3D Buttons Extra Large</h4>
+								<a href="#" class="btn btn-3d btn-xlg btn-purple btn-shadow-1">
+									TRY SMATRY DEMO
+									<span class="block font-lato">30 days demo for free</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-xlg btn-red btn-shadow-1">
+									PURCHASE SMARTY NOW
+									<span class="block font-lato">Free lifetime update included</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-xlg btn-dirtygreen btn-shadow-1">
+									CREATE SMARTY ACCOUNT
+									<span class="block font-lato">Email activation is required</span>
+								</a>
+
+								<br><br>
+
+								<a href="#" class="btn btn-3d btn-xlg btn-purple btn-round btn-shadow-1">
+									TRY SMATRY DEMO
+									<span class="block font-lato">30 days demo for free</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-xlg btn-red btn-round btn-shadow-1">
+									PURCHASE SMARTY NOW
+									<span class="block font-lato">Free lifetime update included</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-xlg btn-dirtygreen btn-round btn-shadow-1">
+									CREATE SMARTY ACCOUNT
+									<span class="block font-lato">Email activation is required</span>
+								</a>
+
+<!-- pre code -->
+<div class="text-left mt-20">
+<a href="javascript:;" onclick="jQuery('#pre-5').slideToggle();">Show Code</a>
+</div>
+<pre id="pre-5" class="text-left rad-0 text-danger hide">
+<span class="text-success">&lt;!--
+AVAILABLE COLORS
+
+.btn-default
+.btn-success
+.btn-danger
+.btn-warning
+.btn-info
+
+.btn-red
+.btn-teal
+.btn-yellow
+.btn-green
+.btn-brown
+.btn-aqua
+.btn-lime
+.btn-purple
+.btn-leaf
+.btn-pink
+.btn-dirtygreen
+.btn-blue
+.btn-amber
+.btn-black
+.btn-white
+
+--&gt;</span>
+&lt;a href="#" class="btn btn-3d btn-xlg btn-shadow-1 <b class="text-danger">btn-red</b>"&gt;
+PURCHASE SMARTY NOW
+&lt;span class="block font-lato"&gt;Free lifetime update included&lt;/span&gt;
+&lt;/a&gt;
+</pre>
+<!-- /pre code -->
+
+
+
+								<hr />
+
+
+								<h4>Button Reveal</h4>
+								<a href="#" class="btn btn-3d btn-sm btn-reveal btn-red">
+									<i class="et-megaphone"></i>
+									<span>Small</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-sm btn-reveal btn-teal">
+									<i class="et-beaker"></i>
+									<span>Small</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-sm btn-reveal btn-yellow btn-light">
+									<i class="icon-beaker"></i>
+									<span>Small</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-sm btn-reveal btn-green">
+									<i class="et-trophy"></i>
+									<span>Small</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-sm btn-reveal btn-brown">
+									<i class="et-basket"></i>
+									<span>Small</span>
+								</a>
+
+								<br />
+
+								<a href="#" class="btn btn-3d btn-sm btn-reveal btn-round btn-shadow-1 btn-red">
+									<i class="et-megaphone"></i>
+									<span>Small</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-sm btn-reveal btn-round btn-shadow-1 btn-teal">
+									<i class="et-beaker"></i>
+									<span>Small</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-sm btn-reveal btn-round btn-shadow-1 btn-yellow btn-light">
+									<i class="icon-beaker"></i>
+									<span>Small</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-sm btn-reveal btn-round btn-shadow-1 btn-green">
+									<i class="et-trophy"></i>
+									<span>Small</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-sm btn-reveal btn-round btn-shadow-1 btn-brown">
+									<i class="et-basket"></i>
+									<span>Small</span>
+								</a>
+
+								<br />
+								<br />
+
+								<a href="#" class="btn btn-3d btn-reveal btn-red">
+									<i class="et-megaphone"></i>
+									<span>Medium</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-reveal btn-teal">
+									<i class="et-beaker"></i>
+									<span>Medium</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-reveal btn-yellow btn-light">
+									<i class="icon-beaker"></i>
+									<span>Medium</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-reveal btn-green">
+									<i class="et-trophy"></i>
+									<span>Medium</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-reveal btn-brown">
+									<i class="et-basket"></i>
+									<span>Medium</span>
+								</a>
+								
+								<br>
+
+								<a href="#" class="btn btn-3d btn-reveal btn-round btn-red">
+									<i class="et-megaphone"></i>
+									<span>Medium</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-reveal btn-round btn-teal">
+									<i class="et-beaker"></i>
+									<span>Medium</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-reveal btn-round btn-yellow btn-light">
+									<i class="icon-beaker"></i>
+									<span>Medium</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-reveal btn-round btn-green">
+									<i class="et-trophy"></i>
+									<span>Medium</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-reveal btn-round btn-brown">
+									<i class="et-basket"></i>
+									<span>Medium</span>
+								</a>
+
+								<br />
+								<br />
+
+								<a href="#" class="btn btn-3d btn-lg btn-reveal btn-red">
+									<i class="et-megaphone"></i>
+									<span>Large</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-lg btn-reveal btn-teal">
+									<i class="et-beaker"></i>
+									<span>Large</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-lg btn-reveal btn-yellow btn-light">
+									<i class="icon-beaker"></i>
+									<span>Large</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-lg btn-reveal btn-green">
+									<i class="et-trophy"></i>
+									<span>Large</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-lg btn-reveal btn-brown">
+									<i class="et-basket"></i>
+									<span>Large</span>
+								</a>
+
+								<br>
+
+								<a href="#" class="btn btn-3d btn-lg btn-reveal btn-round btn-red">
+									<i class="et-megaphone"></i>
+									<span>Large</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-lg btn-reveal btn-round btn-teal">
+									<i class="et-beaker"></i>
+									<span>Large</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-lg btn-reveal btn-round btn-yellow btn-light">
+									<i class="icon-beaker"></i>
+									<span>Large</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-lg btn-reveal btn-round btn-green">
+									<i class="et-trophy"></i>
+									<span>Large</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-lg btn-reveal btn-round btn-brown">
+									<i class="et-basket"></i>
+									<span>Large</span>
+								</a>
+
+								<br />
+								<br />
+
+								<a href="#" class="btn btn-3d btn-xlg btn-reveal btn-red">
+									<i class="et-basket"></i>
+									<span>REVEAL EXTRA LARGE</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-xlg btn-reveal btn-teal">
+									<i class="et-beaker"></i>
+									<span>REVEAL EXTRA LARGE</span>
+								</a>
+
+								<br>
+
+								<a href="#" class="btn btn-3d btn-xlg btn-reveal btn-round btn-red">
+									<i class="et-basket"></i>
+									<span>REVEAL EXTRA LARGE</span>
+								</a>
+								<a href="#" class="btn btn-3d btn-xlg btn-reveal btn-round btn-teal">
+									<i class="et-beaker"></i>
+									<span>REVEAL EXTRA LARGE</span>
+								</a>
+
+<!-- pre code -->
+<div class="text-left mt-20">
+<a href="javascript:;" onclick="jQuery('#pre-6').slideToggle();">Show Code</a>
+</div>
+<pre id="pre-6" class="text-left rad-0 text-danger hide">
+<span class="text-success">&lt;!--
+AVAILABLE COLORS
+
+.btn-default
+.btn-success
+.btn-danger
+.btn-warning
+.btn-info
+
+.btn-red
+.btn-teal
+.btn-yellow
+.btn-green
+.btn-brown
+.btn-aqua
+.btn-lime
+.btn-purple
+.btn-leaf
+.btn-pink
+.btn-dirtygreen
+.btn-blue
+.btn-amber
+.btn-black
+.btn-white
+
+--&gt;</span>
+
+<span class="text-success">&lt;!-- Small --&gt;</span>
+&lt;a href="#" class="btn btn-3d <b>btn-sm</b> btn-reveal btn-red"&gt;
+&lt;i class="et-megaphone"&gt;&lt;/i&gt;
+&lt;span&gt;Small&lt;/span&gt;
+&lt;/a&gt;
+<span class="text-success">&lt;!-- Medium --&gt;</span>
+&lt;a href="#" class="btn btn-3d btn-reveal btn-red"&gt;
+&lt;i class="et-megaphone"&gt;&lt;/i&gt;
+&lt;span&gt;Medium&lt;/span&gt;
+&lt;/a&gt;
+<span class="text-success">&lt;!-- Large --&gt;</span>
+&lt;a href="#" class="btn btn-3d <b>btn-lg</b> btn-reveal btn-blue"&gt;
+&lt;i class="et-megaphone"&gt;&lt;/i&gt;
+&lt;span&gt;Large&lt;/span&gt;
+&lt;/a&gt;
+<span class="text-success">&lt;!-- Extra Large --&gt;</span>
+&lt;a href="#" class="btn btn-3d <b>btn-xlg</b> btn-reveal btn-brown"&gt;
+&lt;i class="et-megaphone"&gt;&lt;/i&gt;
+&lt;span&gt;REVEAL EXTRA LARGE&lt;/span&gt;
+&lt;/a&gt;
+</pre>
+<!-- /pre code -->
+
+
+
+								<hr />
+
+								<h4>Bordered Button</h4>
+								<a href="#" class="btn btn-sm btn-default btn-bordered btn-shadow-1">
+									<span>SMALL</span>
+								</a>
+								<a href="#" class="btn btn-default btn-bordered">
+									<span>MEDIUM</span>
+								</a>
+								<a href="#" class="btn btn-lg btn-default btn-bordered btn-shadow-1">
+									<i class="icon-flag"></i>
+									<span>LARGE</span>
+								</a>
+								<br /><br>
+								<a href="#" class="btn btn-xlg btn-default btn-bordered btn-shadow-1 fs-20">
+									TRY SMARTY DEMO
+									<span class="block font-lato">30 days demo for free</span>
+								</a>
+
+<!-- pre code -->
+<div class="text-left mt-20">
+<a href="javascript:;" onclick="jQuery('#pre-7').slideToggle();">Show Code</a>
+</div>
+<pre id="pre-7" class="text-left rad-0 text-danger hide">
+<span class="text-success">&lt;!-- Bordered Small --&gt;</span>
+&lt;a href="#" class="btn btn-sm btn-default btn-bordered btn-shadow-1"&gt;
+&lt;i class="et-megaphone"&gt;&lt;/i&gt;
+&lt;span&gt;Small&lt;/span&gt;
+&lt;/a&gt;
+<span class="text-success">&lt;!-- Bordered Medium --&gt;</span>
+&lt;a href="#" class="btn btn-default btn-bordered btn-shadow-1"&gt;
+&lt;i class="et-megaphone"&gt;&lt;/i&gt;
+&lt;span&gt;Medium&lt;/span&gt;
+&lt;/a&gt;
+<span class="text-success">&lt;!-- Bordered Large --&gt;</span>
+&lt;a href="#" class="btn btn-lg btn-default btn-bordered btn-shadow-1"&gt;
+&lt;i class="et-megaphone"&gt;&lt;/i&gt;
+&lt;span&gt;Large&lt;/span&gt;
+&lt;/a&gt;
+<span class="text-success">&lt;!-- Bordered Extra Large --&gt;</span>
+&lt;a href="#" class="btn btn-xlg btn-default btn-bordered btn-shadow-1 fs-20"&gt;
+TRY SMARTY DEMO
+&lt;span class="block font-lato"&gt;30 days demo for free&lt;/span&gt;
+&lt;/a&gt;
+</pre>
+<!-- /pre code -->
+
+
+								<hr />
+
+								<h4>Theme Button</h4>
+								<a href="#" class="btn btn-sm btn-primary btn-shadow-1">
+									<span>SMALL</span>
+								</a>
+								<a href="#" class="btn btn-primary btn-shadow-1">
+									<span>MEDIUM</span>
+								</a>
+								<a href="#" class="btn btn-lg btn-primary btn-shadow-1">
+									<i class="icon-flag"></i>
+									<span>LARGE</span>
+								</a>
+								<br /><br>
+								<a href="#" class="btn btn-xlg btn-primary btn-shadow-1 fs-20">
+									TRY SMARTY DEMO
+									<span class="block font-lato">30 days demo for free</span>
+								</a>
+
+<!-- pre code -->
+<div class="text-left mt-20">
+<a href="javascript:;" onclick="jQuery('#pre-8').slideToggle();">Show Code</a>
+</div>
+<pre id="pre-8" class="text-left rad-0 text-danger hide">
+<span class="text-success">&lt;!-- Bordered Small --&gt;</span>
+&lt;a href="#" class="btn btn-sm btn-primary btn-shadow-1"&gt;
+&lt;i class="et-megaphone"&gt;&lt;/i&gt;
+&lt;span&gt;Small&lt;/span&gt;
+&lt;/a&gt;
+<span class="text-success">&lt;!-- Bordered Medium --&gt;</span>
+&lt;a href="#" class="btn btn-primary btn-shadow-1"&gt;
+&lt;i class="et-megaphone"&gt;&lt;/i&gt;
+&lt;span&gt;Medium&lt;/span&gt;
+&lt;/a&gt;
+<span class="text-success">&lt;!-- Bordered Large --&gt;</span>
+&lt;a href="#" class="btn btn-lg btn-primary btn-shadow-1"&gt;
+&lt;i class="et-megaphone"&gt;&lt;/i&gt;
+&lt;span&gt;Large&lt;/span&gt;
+&lt;/a&gt;
+<span class="text-success">&lt;!-- Bordered Extra Large --&gt;</span>
+&lt;a href="#" class="btn btn-xlg btn-primary btn-shadow-1 fs-20"&gt;
+TRY SMARTY DEMO
+&lt;span class="block font-lato"&gt;30 days demo for free&lt;/span&gt;
+&lt;/a&gt;
+</pre>
+<!-- /pre code -->
+
+
+							</div>
+						</div>
+						<!-- /Buttons 3 -->
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+
+
+
+<a href="#" class="btn btn-xlg btn-primary fs-20 fullwidth m-0 bopadding rad-0">
+	<span class="font-lato fs-30">Need help with your Account?</span>
+	<span class="block font-lato">30 days demo for free</span>
+</a>
+			<!-- -->
+			<section class="section-sm">
+				<div class="container">
+
+<!-- pre code -->
+<div class="text-left mt-20">
+<a href="javascript:;" onclick="jQuery('#pre-fb8').slideToggle();">Show Code</a>
+</div>
+<pre id="pre-fb8" class="text-left rad-0 text-danger hide">
+<span class="text-success">&lt;!-- BUTTON CALLOUT --&gt;</span>
+&lt;a href="#" class="btn btn-xlg btn-primary fs-20 fullwidth m-0 bopadding rad-0"&gt;
+	&lt;span class="font-lato fs-30"&gt;Need help with your Account?&lt;/span&gt;
+	&lt;span class="block font-lato"&gt;30 days demo for free&lt;/span&gt;
+&lt;/a&gt;
+<span class="text-success">&lt;!-- /BUTTON CALLOUT --&gt;</span>
+</pre>
+<!-- /pre code -->
+
+				</div>
+			</section>
+			<!-- / -->
+
+
+
+
+
+			<!-- -->
+			<section>
+				<div class="container">
+
+					<h4>Social Buttons</h4>
+
+					<div class="row">
+
+						<div class="col-md-6 col-sm-6">
+
+							<a class="btn btn-block btn-social btn-adn">
+								<i class="fa fa-adn"></i> Sign in with App.net
+							</a>
+							<a class="btn btn-block btn-social btn-bitbucket">
+								<i class="fa fa-bitbucket"></i> Sign in with Bitbucket
+							</a>
+							<a class="btn btn-block btn-social btn-dropbox">
+								<i class="fa fa-dropbox"></i> Sign in with Dropbox
+							</a>
+							<a class="btn btn-block btn-social btn-facebook">
+								<i class="fa fa-facebook"></i> Sign in with Facebook
+							</a>
+							<a class="btn btn-block btn-social btn-flickr">
+								<i class="fa fa-flickr"></i> Sign in with Flickr
+							</a>
+							<a class="btn btn-block btn-social btn-foursquare">
+								<i class="fa fa-foursquare"></i> Sign in with Foursquare
+							</a>
+							<a class="btn btn-block btn-social btn-github">
+								<i class="fa fa-github"></i> Sign in with GitHub
+							</a>
+							<a class="btn btn-block btn-social btn-google">
+								<i class="fa fa-google-plus"></i> Sign in with Google
+							</a>
+							<a class="btn btn-block btn-social btn-instagram">
+								<i class="fa fa-instagram"></i> Sign in with Instagram
+							</a>
+							<a class="btn btn-block btn-social btn-linkedin">
+								<i class="fa fa-linkedin"></i> Sign in with LinkedIn
+							</a>
+
+						</div>
+
+						<div class="col-md-6 col-sm-6">
+
+							<a class="btn btn-block btn-social btn-microsoft">
+								<i class="fa fa-windows"></i> Sign in with Microsoft
+							</a>
+							<a class="btn btn-block btn-social btn-openid">
+								<i class="fa fa-openid"></i> Sign in with OpenID
+							</a>
+							<a class="btn btn-block btn-social btn-pinterest">
+								<i class="fa fa-pinterest"></i> Sign in with Pinterest
+							</a>
+							<a class="btn btn-block btn-social btn-reddit">
+								<i class="fa fa-reddit"></i> Sign in with Reddit
+							</a>
+							<a class="btn btn-block btn-social btn-soundcloud">
+								<i class="fa fa-soundcloud"></i> Sign in with SoundCloud
+							</a>
+							<a class="btn btn-block btn-social btn-tumblr">
+								<i class="fa fa-tumblr"></i> Sign in with Tumblr
+							</a>
+							<a class="btn btn-block btn-social btn-twitter">
+								<i class="fa fa-twitter"></i> Sign in with Twitter
+							</a>
+							<a class="btn btn-block btn-social btn-vimeo">
+								<i class="fa fa-vimeo-square"></i> Sign in with Vimeo
+							</a>
+							<a class="btn btn-block btn-social btn-vk">
+								<i class="fa fa-vk"></i> Sign in with VK
+							</a>
+							<a class="btn btn-block btn-social btn-yahoo">
+								<i class="fa fa-yahoo"></i> Sign in with Yahoo!
+							</a>
+
+						</div>
+					
+					</div>
+
+
+
+<!-- pre code -->
+<div class="text-left mt-20">
+<a href="javascript:;" onclick="jQuery('#pre-sil').slideToggle();">Show Code</a>
+</div>
+<pre id="pre-sil" class="text-left rad-0 text-danger hide">
+<span class="text-success">&lt;!-- 
+Available Sizes:
+
+	.btn-sm
+	.btn-sm
+	.btn-lg
+ --&gt;</span>
+
+
+&lt;a class="btn btn-block btn-social btn-adn"&gt;
+	&lt;i class="fa fa-adn"&gt;&lt;/i&gt; Sign in with App.net
+&lt;/a&gt;
+
+&lt;a class="btn btn-block btn-social btn-bitbucket"&gt;
+	&lt;i class="fa fa-bitbucket"&gt;&lt;/i&gt; Sign in with Bitbucket
+&lt;/a&gt;
+
+&lt;a class="btn btn-block btn-social btn-dropbox"&gt;
+	&lt;i class="fa fa-dropbox"&gt;&lt;/i&gt; Sign in with Dropbox
+&lt;/a&gt;
+
+&lt;a class="btn btn-block btn-social btn-facebook"&gt;
+	&lt;i class="fa fa-facebook"&gt;&lt;/i&gt; Sign in with Facebook
+&lt;/a&gt;
+
+&lt;a class="btn btn-block btn-social btn-flickr"&gt;
+	&lt;i class="fa fa-flickr"&gt;&lt;/i&gt; Sign in with Flickr
+&lt;/a&gt;
+
+&lt;a class="btn btn-block btn-social btn-foursquare"&gt;
+	&lt;i class="fa fa-foursquare"&gt;&lt;/i&gt; Sign in with Foursquare
+&lt;/a&gt;
+
+&lt;a class="btn btn-block btn-social btn-github"&gt;
+	&lt;i class="fa fa-github"&gt;&lt;/i&gt; Sign in with GitHub
+&lt;/a&gt;
+
+&lt;a class="btn btn-block btn-social btn-google"&gt;
+	&lt;i class="fa fa-google-plus"&gt;&lt;/i&gt; Sign in with Google
+&lt;/a&gt;
+
+&lt;a class="btn btn-block btn-social btn-instagram"&gt;
+	&lt;i class="fa fa-instagram"&gt;&lt;/i&gt; Sign in with Instagram
+&lt;/a&gt;
+
+&lt;a class="btn btn-block btn-social btn-linkedin"&gt;
+	&lt;i class="fa fa-linkedin"&gt;&lt;/i&gt; Sign in with LinkedIn
+&lt;/a&gt;
+
+&lt;a class="btn btn-block btn-social btn-microsoft"&gt;
+	&lt;i class="fa fa-windows"&gt;&lt;/i&gt; Sign in with Microsoft
+&lt;/a&gt;
+
+&lt;a class="btn btn-block btn-social btn-openid"&gt;
+	&lt;i class="fa fa-openid"&gt;&lt;/i&gt; Sign in with OpenID
+&lt;/a&gt;
+
+&lt;a class="btn btn-block btn-social btn-pinterest"&gt;
+	&lt;i class="fa fa-pinterest"&gt;&lt;/i&gt; Sign in with Pinterest
+&lt;/a&gt;
+
+&lt;a class="btn btn-block btn-social btn-reddit"&gt;
+	&lt;i class="fa fa-reddit"&gt;&lt;/i&gt; Sign in with Reddit
+&lt;/a&gt;
+
+&lt;a class="btn btn-block btn-social btn-soundcloud"&gt;
+	&lt;i class="fa fa-soundcloud"&gt;&lt;/i&gt; Sign in with SoundCloud
+&lt;/a&gt;
+
+&lt;a class="btn btn-block btn-social btn-tumblr"&gt;
+	&lt;i class="fa fa-tumblr"&gt;&lt;/i&gt; Sign in with Tumblr
+&lt;/a&gt;
+
+&lt;a class="btn btn-block btn-social btn-twitter"&gt;
+	&lt;i class="fa fa-twitter"&gt;&lt;/i&gt; Sign in with Twitter
+&lt;/a&gt;
+
+&lt;a class="btn btn-block btn-social btn-vimeo"&gt;
+	&lt;i class="fa fa-vimeo-square"&gt;&lt;/i&gt; Sign in with Vimeo
+&lt;/a&gt;
+
+&lt;a class="btn btn-block btn-social btn-vk"&gt;
+	&lt;i class="fa fa-vk"&gt;&lt;/i&gt; Sign in with VK
+&lt;/a&gt;
+
+&lt;a class="btn btn-block btn-social btn-yahoo"&gt;
+	&lt;i class="fa fa-yahoo"&gt;&lt;/i&gt; Sign in with Yahoo!
+&lt;/a&gt;
+</pre>
+<!-- /pre code -->
+
+				</div>
+			</section>
+			<!-- / -->
+
+
+
+
+			<!-- -->
+			<section>
+				<div class="container">
+
+					<h4>Translucid Buttons</h4>
+					<p>Can be used on any background color</p>
+
+					<div class="row">
+					
+						<div class="col-md-3">
+							<div class="box-danger radius-3 p-10">
+								<button type="button" class="btn btn-block btn-shadow-1 btn-sm btn-translucid">Translucid</button>
+								<button type="button" class="btn btn-block btn-shadow-1 btn-translucid">Translucid</button>
+								<button type="button" class="btn btn-block btn-shadow-1 btn-lg btn-translucid">Translucid</button>
+								<button type="button" class="btn btn-block btn-shadow-1 btn-xlg btn-translucid">TRANSLUCID LARGE</button>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="box-warning radius-3 p-10">
+								<button type="button" class="btn btn-block btn-shadow-1 btn-sm btn-translucid">Translucid</button>
+								<button type="button" class="btn btn-block btn-shadow-1 btn-translucid">Translucid</button>
+								<button type="button" class="btn btn-block btn-shadow-1 btn-lg btn-translucid">Translucid</button>
+								<button type="button" class="btn btn-block btn-shadow-1 btn-xlg btn-translucid">TRANSLUCID LARGE</button>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="box-info radius-3 p-10">
+								<button type="button" class="btn btn-block btn-shadow-1 btn-sm btn-translucid">Translucid</button>
+								<button type="button" class="btn btn-block btn-shadow-1 btn-translucid">Translucid</button>
+								<button type="button" class="btn btn-block btn-shadow-1 btn-lg btn-translucid">Translucid</button>
+								<button type="button" class="btn btn-block btn-shadow-1 btn-xlg btn-translucid">TRANSLUCID LARGE</button>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="box-success radius-3 p-10">
+								<button type="button" class="btn btn-block btn-shadow-1 btn-sm btn-translucid">Translucid</button>
+								<button type="button" class="btn btn-block btn-shadow-1 btn-translucid">Translucid</button>
+								<button type="button" class="btn btn-block btn-shadow-1 btn-lg btn-translucid">Translucid</button>
+								<button type="button" class="btn btn-block btn-shadow-1 btn-xlg btn-translucid">TRANSLUCID LARGE</button>
+							</div>
+						</div>
+
+					</div>
+
+<!-- pre code -->
+<div class="text-left mt-20">
+<a href="javascript:;" onclick="jQuery('#pre-tr').slideToggle();">Show Code</a>
+</div>
+<pre id="pre-tr" class="text-left rad-0 text-danger hide">
+<span class="text-success">&lt;!-- Extra Small --&gt;</span>
+&lt;button type="button" class="btn btn-block btn-sm btn-translucid"&gt;Translucid&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Default --&gt;</span>
+&lt;button type="button" class="btn btn-block btn-translucid"&gt;Translucid&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Large --&gt;</span>
+&lt;button type="button" class="btn btn-block btn-lg btn-translucid"&gt;Translucid&lt;/button&gt;
+
+<span class="text-success">&lt;!-- Extra Large--&gt;</span>
+&lt;button type="button" class="btn btn-block btn-xlg btn-translucid"&gt;TRANSLUCID LARGE&lt;/button&gt;
+</pre>
+<!-- /pre code -->
+
+				</div>
+			</section>
+			<!-- / -->
+
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="assets/js/scripts.js"></script>
+		
+		<!-- STYLESWITCHER - REMOVE -->
+		<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
+	</body>
+</html>

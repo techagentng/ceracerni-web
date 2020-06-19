@@ -1,0 +1,363 @@
+<?php include('inc/starter.html');>
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+		
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+
+		enable-materialdesign 	= enable material design js library
+	-->
+	<body class="smoothscroll enable-animation enable-materialdesign">
+
+		<!-- wrapper -->
+		<div id="wrapper" class="mdl-shadow--4dp">
+
+				<!-- 
+				+ OPTIONS
+					.fullheight
+					.halfheight
+					.thirdheight
+					.mobile-fullheight
+
+					.parallax-slider 	= opacity on scroll down
+			-->
+			<section id="slider" class="thirdheight mobile-fullheight m-0 parallax-slider" style="background:url('demo_files/images/mdl-blue-min.jpg') center center;">
+
+				<div class="display-table">
+					<div class="display-table-cell vertical-align-middle">
+						
+						<div class="container text-center">
+							<h1 class="m-0 fs-50 fw-300 wow fadeInUp" data-wow-delay="0.4s">Smarty <b class="fw-600">Material</b> Design</h1>
+							<p class="lead font-lato fs-30 wow fadeInUp" data-wow-delay="0.7s">power of google material</p>
+
+							<div class="mt-20">
+								<a href="#explore-slideto" class="btn btn-default mdl-js-button mdl-js-ripple-effect btn-lg wow fadeInUp scrollTo fw-300" data-offset="160" data-wow-delay="1.5s">EXPLORE COMPONENTS</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<span class="overlay dark-0"><!-- dark overlay [0 to 9 opacity] --></span>
+
+			</section>
+			<!-- -->
+
+
+
+
+
+			<!-- -->
+			<section class="mdl-shadow--4dp">
+				<div class="container">
+
+
+					<div class="row">
+
+						<div class="col-md-3 col-sm-3">
+
+							<div class="side-nav mdl-shadow--4dp">
+
+								<div id="explore-slideto" class="side-nav-head">
+									<button class="fa fa-bars"></button>
+									<h4 class="mt-0">MATERIAL COMPONENTS</h4>
+								</div>
+
+								<ul class="list-group list-unstyled">
+									<li class="list-group-item active"><a href="shortcode-material-design-badges.html">BADGES</a></li>
+									<li class="list-group-item"><a href="shortcode-material-design-buttons.html">BUTTONS</a></li>
+									<li class="list-group-item"><a href="shortcode-material-design-cards.html">CARDS</a></li>
+									<li class="list-group-item"><a href="shortcode-material-design-chips.html">CHIPS</a></li>
+									<li class="list-group-item"><a href="shortcode-material-design-dialogs.html">DIALOGS</a></li>
+									<li class="list-group-item"><a href="shortcode-material-design-loading.html">LOADING</a></li>
+									<li class="list-group-item"><a href="shortcode-material-design-menus.html">MENUS</a></li>
+									<li class="list-group-item"><a href="shortcode-material-design-sliders.html">SLIDERS</a></li>
+									<li class="list-group-item"><a href="shortcode-material-design-snackbar.html">SNACKBAR</a></li>
+									<li class="list-group-item"><a href="shortcode-material-design-toggles.html">TOGGLES</a></li>
+									<li class="list-group-item"><a href="shortcode-material-design-tables.html">TABLES</a></li>
+									<li class="list-group-item"><a href="shortcode-material-design-textfield.html">TEXT FIELDS</a></li>
+									<li class="list-group-item"><a href="shortcode-material-design-tooltips.html">TOOLTIPS</a></li>
+									<li class="list-group-item"><a href="shortcode-material-design-grid.html">GRID</a></li>
+									<li class="list-group-noicon"><div class="divider m-0"><!-- divider --></div></li>
+									<!-- https://material.io/icons/ -->
+									<li class="list-group-item"><a href="shortcode-material-design-icons.html">ICONS</a></li>
+									<li class="list-group-item"><a href="shortcode-material-design-utils.html">UTILS</a></li><!-- shadows, etc -->
+
+								</ul>
+
+							</div>
+
+						</div>
+
+
+
+						<div class="col-md-9 col-sm-9">
+
+
+							<div class="card card-default mb-100 mdl-shadow--2dp">
+								<div class="card-block">
+									<h2 class="fs-25 mt-0">
+										<span>
+											MATERIAL : <span class="fw-300">BADGES</span>
+										</span>
+									</h2>
+
+									<p class="fs-16 fw-300">
+										The Material Design Lite (MDL) badge component is an onscreen notification element. A badge consists of a small circle, typically containing a number or other characters, that appears in proximity to another object. A badge can be both a notifier that there are additional items associated with an object and an indicator of how many items there are.
+									</p>
+									<p class="fs-16 fw-300">
+										You can use a badge to unobtrusively draw the user's attention to items they might not otherwise notice, or to emphasize that items may need their attention. 
+									</p>
+
+
+									<!-- pre code -->
+									<div class="text-left mt-20">
+										<a href="javascript:;" onclick="jQuery('#pre-help').slideToggle();" class="btn btn-sm btn-primary mdl-js-button mdl-js-ripple-effect">HOW TO ENABLE MATERIAL</a>
+									</div>
+									<div class="mt-10">
+<pre id="pre-help" class="text-left rad-0 text-black hide m-0">
+1. Add to html head, BEFORE essentials.css:
+<span class="text-danger">
+&lt;link href="assets/plugins/mdl/material.indigo-blue.min.css" rel="stylesheet"&gt;
+&lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt;
+</span>
+
+2. Add .enable-materialdesign class to body:
+<span class="text-success">&lt;body class="smoothscroll enable-animation <b>enable-materialdesign</b>"&gt;</span>
+
+
+<b>NOTE:</b> if you don't need 'Material Design Lite' javascript plugin, skip step 2 
+<span class="fs-11">(.enable-materialdesign class is used by assets/js/scripts.js to load MDL plugin from assets/plugins/mdl/)</span>
+
+<b>COLOR SCHEME:</b> We use blue as default color scheme.You can create your own material design color:
+<a href="https://getmdl.io/customize/index.html" target="_blank" rel="nofollow">Click to create your material design color</a>
+
+Credits: <a href="https://getmdl.io/index.html" target="_blank" rel="nofollow">MDL official</a>
+</pre>
+									</div>
+									<!-- /pre code -->
+
+								</div>
+							</div>
+
+
+							<div class="row text-center">
+								<div class="col-md-3 offset-xs-3">
+
+									<!-- Number badge on icon -->
+									<div class="material-icons mdl-badge mdl-badge--overlap fs-40 m-0" data-badge="1">account_box</div>
+
+									<br>
+
+									Number
+								</div>
+								<div class="col-md-3">
+
+									<!-- Icon badge on icon -->
+									<div class="material-icons mdl-badge mdl-badge--overlap fs-40 m-0" data-badge="♥">account_box</div>
+
+									<br>
+
+									Icon
+								</div>
+							</div>
+
+
+
+							<!-- pre code -->
+							<div class="text-left mt-20">
+								<a href="javascript:;" onclick="jQuery('#pre-1').slideToggle();" class="btn btn-sm btn-default mdl-js-button mdl-js-ripple-effect">Show Code</a>
+							</div>
+							<div class="mt-10">
+<pre id="pre-1" class="text-left rad-0 text-danger hide m-0">
+<span class="text-success">&lt;!-- Number badge on icon --&gt;</span>
+&lt;div class="material-icons mdl-badge mdl-badge--overlap fs-40" data-badge="1"&gt;account_box&lt;/div&gt;
+
+<span class="text-success">&lt;!-- Icon badge on icon --&gt;</span>
+&lt;div class="material-icons mdl-badge mdl-badge--overlap fs-40" data-badge="♥"&gt;account_box&lt;/div&gt;
+</pre>
+							</div>
+							<!-- /pre code -->
+
+
+
+							<hr>
+
+
+
+							<div class="mt-60">				
+
+								<div class="row text-center">
+									<div class="col-md-3 offset-xs-3">
+
+										<!-- Number badge -->
+										<span class="mdl-badge" data-badge="4">Inbox</span>
+
+									</div>
+									<div class="col-md-3">
+
+										<!-- Icon badge -->
+										<span class="mdl-badge" data-badge="♥">Mood</span>
+
+									</div>
+								</div>
+
+
+							<!-- pre code -->
+							<div class="text-left mt-20">
+								<a href="javascript:;" onclick="jQuery('#pre-2').slideToggle();" class="btn btn-sm btn-default mdl-js-button mdl-js-ripple-effect">Show Code</a>
+							</div>
+							<div class="mt-10">
+<pre id="pre-2" class="text-left rad-0 text-danger hide m-0">
+<span class="text-success">&lt;!-- Number badge --&gt;</span>
+&lt;span class="mdl-badge" data-badge="4"&gt;Inbox&lt;/span&gt;
+
+<span class="text-success">&lt;!-- Icon badge --&gt;</span>
+&lt;span class="mdl-badge" data-badge="♥"&gt;Mood&lt;/span&gt;
+</pre>
+							</div>
+
+
+
+							<hr>
+
+
+
+							<div class="mt-60">		
+
+								1. <span class="mdl-badge mdl-badge--no-background" data-badge="123">This badge has no background color.</span>
+
+							</div>
+
+
+							<div class="mt-60">
+
+								2. <a href="#">This link is followed by a badge.</a>
+								<span class="mdl-badge" data-badge="12"></span>
+
+							</div>
+
+
+							<div class="mt-60">
+								3. <a href="#" class="mdl-badge" data-badge="7">This link contains a badge.</a>
+							</div>
+
+
+
+
+							<!-- pre code -->
+							<div class="text-left mt-20">
+								<a href="javascript:;" onclick="jQuery('#pre-3').slideToggle();" class="btn btn-sm btn-default mdl-js-button mdl-js-ripple-effect">Show Code</a>
+							</div>
+							<div class="mt-10">
+<pre id="pre-3" class="text-left rad-0 text-danger hide m-0">
+1.  &lt;span class="mdl-badge mdl-badge--no-background" data-badge="123"&gt;This badge has no background color.&lt;/span&gt;
+
+
+2.  &lt;a href="#"&gt;This link is followed by a badge.&lt;/a&gt;
+&lt;span class="mdl-badge" data-badge="12"&gt;&lt;/span&gt;
+
+
+3.  &lt;a href="#" class="mdl-badge" data-badge="7"&gt;This link contains a badge.&lt;/a&gt;
+</pre>
+							</div>
+
+
+
+
+							<div class="card card-default mt-100 mdl-shadow--2dp">
+								<div class="card-block">
+
+									<table class="table table-responsive fs-14">
+										<thead>
+											<tr>
+												<th class="fw-200">MDL class</th>
+												<th>Effect</th>
+												<th>Remarks</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<td><code>mdl-badge</code></td>
+												<td>Defines badge as an MDL component</td>
+												<td>Required on span or link</td>
+											</tr>
+											<tr>
+												<td><code>mdl-badge--no-background</code></td>
+												<td>Applies open-circle effect to badge</td>
+												<td>Optional</td>
+											</tr>
+											<tr>
+											<td><code>mdl-badge--overlap</code></td>
+												<td>Make the badge overlap with its container</td>
+												<td>Optional</td>
+											</tr>
+											<tr>
+											<td><code>data-badge="value"</code></td>
+												<td>Assigns string value to badge</td>
+												<td>Not a class, but a separate attribute; required on span or link</td>
+											</tr>
+										</tbody>
+
+									</table>
+
+								</div>
+							</div>
+
+
+
+						</div>
+
+					</div>
+
+
+
+					</div>
+
+
+
+				</div>
+			</section>
+			<!-- / -->
+
+			<!-- FOOTER -->
+		
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="assets/js/scripts.js"></script>
+		
+		<!-- STYLESWITCHER - REMOVE -->
+		<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
+	</body>
+</html>
