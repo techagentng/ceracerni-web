@@ -4,7 +4,7 @@
 <!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
 	<head><meta charset="windows-1252">
 		
-		<title>Ceracerani</title>
+		<title>Ceracerni Official Website</title>
 		<meta name="keywords" content="" />
 		<meta name="description" content="Mural artist, wall designs" />
 		<meta name="Author" content="Techagentng" />
@@ -203,7 +203,9 @@ div .margin{
 .videoo img {
   opacity: .65;
 }
-
+.out{
+	z-index: 300;
+}
 .play {
   height: 80px;
   width: 120px;
@@ -1151,7 +1153,7 @@ div .margin{
 							<h4 style="color:white;"><b>CERACERNI SPEAKS PIDGIN LIVE ON BBC 😅</h4>
 						<!-- YOUTUBE VIDEO -->
 					<div class="embed-responsive embed-responsive-16by9">
-					<iframe width="460" height="115" src="https://www.youtube.com/embed/cvkfysRWLpA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe class="out" width="460" height="115" src="https://www.youtube.com/embed/cvkfysRWLpA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					
 
@@ -2376,15 +2378,13 @@ div .margin{
 			<div class="inner">
 				<!-- <img src="svg/383.gif" alt="loader"> -->
 			</div>
-			<div class="loaddots">
-			<span></span>
-			<span></span>
-			<span></span>
-			</div>
+			
 
 		<!-- Dropper dropp-wavee 32 -->
-			<div id="dropper"></div><!-- Dropper dropp-wavee 32 -->	
+			<div id="dropper"></div>
+		<!-- Dropper dropp-wavee 32 -->	
 		
+			<div id="dropper4"></div>
 		</div><!-- /PRELOADER -->
 	
 <!-- partial -->

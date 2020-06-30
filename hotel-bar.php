@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 		<meta charset="utf-8" />
-		<title>Hotals/Bar Wall Design Ceracerni</title>
-		<meta name="description" content="" />
+		<title>Hotel and Bar Design Ceracerni</title>
+		<meta name="description" content="Hotel and Bar Design @Ceracerni" />
 		<meta name="Author" content="Nnah Kenneth [www.techagentng.com]" />
 
 		<!-- mobile settings -->
@@ -18,6 +18,7 @@
 		<link href="menu.css" rel="stylesheet" type="text/css">
 		<link href="dropp-wavee.css" rel="stylesheet" type="text/css">
 		<link href="harm-menu.css" rel="stylesheet" type="text/css" />
+		<link href="imageModal.css" rel="stylesheet" type="text/css" />
 		</head>
 		<style>
 		   .list-unstyled{
@@ -32,91 +33,90 @@
 	<?php include('inc/menu-draw.php');?>
 	<?php include('inc/menu.php');?>
 		<?php include('inc/head-label.php');?>
+	
        <div class="body-wrapper grid">
+	   <div class="heading">
+			   <h1>Hotel & Bar Design</h1>
+		   </div>
 		   <!-- Side bar -->
 		   <?php include('inc/aside-menu.php');?>  
-		   <div class="heading">
-			   <h1>Hotel & Bar Wall Design</h1>
-		   </div>
+		   
 		   <div class="main">
 		   
 		   <div class="img-grid">
 		   <div class="image">
-			 <img src="gridImg/HOTEL-BAR/Bar.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/HOTEL-BAR/Bar.jpg" class="myImg" data-delay="0.5s" id="foto" alt="hotel and bar">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/HOTEL-BAR/Bar2.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/HOTEL-BAR/Bar2.jpg" class="myImg" data-delay="0.5s" id="foto" alt="hotel and bar">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/HOTEL-BAR/Eko Hotel 3.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/HOTEL-BAR/Eko Hotel 3.jpg" class="myImg" data-delay="0.5s" id="foto" alt="hotel and bar">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/HOTEL-BAR/Eko Hotel 5.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/HOTEL-BAR/Eko Hotel 5.jpg" class="myImg" data-delay="0.5s" id="foto" alt="hotel and bar">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/HOTEL-BAR/Eko Hotel 6.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/HOTEL-BAR/Eko Hotel 6.jpg" class="myImg" data-delay="0.5s" id="foto" alt="hotel and bar">
 		   </div>
 
 		   <div class="image" id="down">
-			 <img src="gridImg/HOTEL-BAR/EkoHotels4.JPG" data-delay="0.5s" id="foto">
+			 <img src="gridImg/HOTEL-BAR/EkoHotels4.JPG" class="myImg" data-delay="0.5s" id="foto" alt="hotel and bar">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/HOTEL-BAR/Eko Hotels.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/HOTEL-BAR/Eko Hotels.jpg" class="myImg" data-delay="0.5s" id="foto" alt="hotel and bar">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/HOTEL-BAR/Eko Hotels2.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/HOTEL-BAR/Eko Hotels2.jpg" class="myImg" data-delay="0.5s" id="foto" alt="hotel and bar">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/HOTEL-BAR/Eko Hotels7.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/HOTEL-BAR/Eko Hotels7.jpg" class="myImg" data-delay="0.5s" id="foto" alt="hotel and bar">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/HOTEL-BAR/Graffitti Bar.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/HOTEL-BAR/Graffitti Bar.jpg" class="myImg" data-delay="0.5s" id="foto" alt="hotel and bar">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/HOTEL-BAR/Graffitti2.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/HOTEL-BAR/Graffitti2.jpg" class="myImg" data-delay="0.5s" id="foto" alt="hotel and bar">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/HOTEL-BAR/Grafitti.JPG" data-delay="0.5s" id="foto">
+			 <img src="gridImg/HOTEL-BAR/Grafitti.JPG" class="myImg" data-delay="0.5s" id="foto" alt="hotel and bar">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/HOTEL-BAR/Heineken 4.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/HOTEL-BAR/Heineken 4.jpg" class="myImg" data-delay="0.5s" id="foto" alt="hotel and bar">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/HOTEL-BAR/Heineken Retro Lounge.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/HOTEL-BAR/Heineken Retro Lounge.jpg" class="myImg" data-delay="0.5s" id="foto" alt="hotel and bar">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/HOTEL-BAR/Hotel GG.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/HOTEL-BAR/Hotel GG.jpg" class="myImg" data-delay="0.5s" id="foto" alt="hotel and bar">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/HOTEL-BAR/Hotel MM.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/HOTEL-BAR/Hotel MM.jpg" class="myImg" data-delay="0.5s" id="foto" alt="hotel and bar">
 		   </div>
 		   </div>
-			 
+			  
 		   </div>
-	      	<!-- FOOTER -->
-            <?php include('inc/footer.php');?>
-		<!-- /FOOTER -->
+	        <!-- FOOTER -->
+			   <?php include('inc/footer.php');?>
+		       <!-- /FOOTER -->
 	    </div>
 
-	
-
-		
-		<!-- /wrapper -->
-
+		  <!-- Modal image html -->
+		  <?php include('inc/imgModal.php');?>
 
 		<!-- SCROLL TO TOP -->
 		<a href="#" id="toTop"></a>
@@ -124,6 +124,8 @@
         
 		
 		<script type="text/javascript" src="assets/plugins/jquery/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="modal-script.js"></script>
+	
 		<script>
 			function openNav() {
 				document.getElementById("mySidebar").style.width = "100%";
@@ -135,7 +137,6 @@
 				document.getElementById("main").style.marginLeft= "0";
 			}
 		</script>
-		
 		  <script type="text/javascript">
             $('aside').on('click', 'ul li', function(){
 				$(this).addClass('active').siblings().removeClass('active')

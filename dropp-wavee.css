@@ -1,10 +1,13 @@
 /* DROPPER CSS */
-@keyframes drop{
+@keyframes yellow{
 	0%{
-		opacity: 0.2;
+		opacity: 1;
 		transform: translateY(0);
 	}
-	20%{
+  	30%{
+		opacity: 0;
+  }
+  60%{
 		opacity: 1;
 	}
 	100%{
@@ -14,18 +17,44 @@
 		transform: translateY(350px);
 	}
 }
+
+@keyframes blue{
+	0%{
+		opacity: 0;
+		transform: translateY(0);
+	}
+  	30%{
+		opacity: 1;
+	}
+	60%{
+		opacity: 0;
+  }
+  100%{
+		opacity: 1;
+	}
+	100%{
+		transform: translateY(350px);
+	}
+}
 #dropper{
-	width: 100px;
+	animation: yellow 2s linear infinite; 
+}
+#dropper4{
+	animation: blue 2s linear infinite; 
+}
+#dropper, #dopper4{
+  width: 100px;
 	height: 100px;
 	position: absolute;
 	background-color: transparent;
 	top: 110px;
-	margin-left: 660px;
+	margin-left: 600px;
 	border-radius: 10em;
-	animation: drop 2s linear infinite;  
-  display: block;  
-  z-index: 60;
+  left: 0;
 }
+
+
+
 #dropper:before{
   content: '';
   background: url(dropp.png) no-repeat center center/cover;
@@ -36,123 +65,27 @@
   width: 100%;
   height: 100%;
 }
-.menu-grid-box > ul > li > a:hover ~ #dropper{
-  display: block; 
-}
-
-.drop {
+#dropper2:before{
+  content: '';
+  background: url(dropp3.png) no-repeat center center/cover;
+  background-size: contain;
   position: absolute;
-	width: 100px;
-	height: 100px;
-  top: -114px;
-  margin: 0 auto;
-	background: linear-gradient(    45deg,  #fdeff9,  #ec38bc, #7303c0    );
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	border-radius: 50%;
-	-moz-border-top-right-radius: 0;
-	-webkit-border-top-right-radius: 0;
-	border-top-right-radius: 0;
-	transform: rotate(-45deg);
-  -moz-animation-name: drip;
-  -webkit-animation-name: drip;
-  animation-name: drip;
-  -moz-animation-timing-function: cubic-bezier(0, .55, .02, 0);
-  -webkit-animation-timing-function: cubic-bezier(0, .55, .02, 0);
-  animation-timing-function: cubic-bezier(0, .55, .02, 0);
-  -moz-animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -moz-animation-iteration-count: 1;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.wave {
+#dropper4:before{
+  content: '';
+  background: url(dropp4.png) no-repeat center center/cover;
+  background-size: contain;
   position: absolute;
-  opacity: 0;
-  top: 700px;
-  left: 780px;
-	width: 2px;
-	height: 1px;
-  border: white 7px solid;
-	-moz-border-radius: 300px / 150px;
-	-webkit-border-radius: 300px / 150px;
-	border-radius: 300px / 150px;
-  -moz-animation-name: ripple;
-  -webkit-animation-name: ripple;
-  animation-name: ripple;
-  -moz-animation-delay: .5s;
-  -webkit-animation-delay: .5s;
-  animation-delay: .5s;
-  -moz-animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -moz-animation-iteration-count: 1;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
-
-.wave:after {
-  content: "";
-  position: absolute;
-  opacity: 0;
-  top: -5px;
-  left: -5px;
-	width: 2px;
-	height: 1px;
-  border: #FFF 5px solid;
-	-moz-border-radius: 300px / 150px;
-	-webkit-border-radius: 300px / 150px;
-	border-radius: 300px / 150px;
-  -moz-animation-name: ripple-2;
-  -webkit-animation-name: ripple-2;
-  animation-name: ripple-2;
-  -moz-animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -moz-animation-iteration-count: 1;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  z-index: 3;
-}
-
-@keyframes ripple {
-    from {
-      opacity: 1;
-    }
-    to {
-      width: 600px;
-      height: 600px;
-      border-width: 1px;
-      top: -150px;
-      opacity: 0;
-    }
-}
-
-@keyframes ripple-2 {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-  100% {
-    width: 200px;
-    height: 100px;
-    border-width: 1px;
-    top: 150px;
-    left: 200px;
-  }
-}
-
-@keyframes drip {
-    to {
-      top: 590px;
-    }
-}
-
 @media only screen and (max-width: 736px) {
   #dropper{
     width: 100px;
@@ -160,8 +93,27 @@
     position: absolute;
     background-color: transparent;
     top: 110px;
-    margin-left: 120px;
+    margin-left: 143px;
     border-radius: 10em;
-    animation: drop 2s linear infinite;  
+  }
+  #dropper2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: transparent;
+    top: 110px;
+    margin-left: 143px;
+    border-radius: 10em;
+    
+  }
+  #dropper4{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: transparent;
+    top: 110px;
+    margin-left: 143px;
+    border-radius: 10em;
+   
   }
 }

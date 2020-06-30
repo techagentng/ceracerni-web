@@ -18,6 +18,7 @@
 		<link href="menu.css" rel="stylesheet" type="text/css">
 		<link href="dropp-wavee.css" rel="stylesheet" type="text/css">
 		<link href="harm-menu.css" rel="stylesheet" type="text/css" />
+		<link href="imageModal.css" rel="stylesheet" type="text/css" />
 		</head>
 		<style>
 		   .list-unstyled{
@@ -44,35 +45,35 @@
 		   
 		   <div class="img-grid">
 		   <div class="image">
-			 <img src="gridImg/African-Baba.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/African-Baba.jpg" data-delay="0.5s"  class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/African-Elephant.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/African-Elephant.jpg" data-delay="0.5s"  class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/African2.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/African2.jpg" data-delay="0.5s"  class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/animal.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/animal.jpg" data-delay="0.5s"  class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/African.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/African.jpg" data-delay="0.5s"  class="myImg" id="foto">
 		   </div>
 
 		   <div class="image" id="down">
-			 <img src="gridImg/Floral-Pattern.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/Floral-Pattern.jpg" data-delay="0.5s"  class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/Heineken-Women.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/Heineken-Women.jpg" data-delay="0.5s"  class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/Heineken.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/Heineken.jpg" data-delay="0.5s"  class="myImg" id="foto">
 		   </div>
 		   </div>
 			  
@@ -82,11 +83,8 @@
 		       <!-- /FOOTER -->
 	    </div>
 
-		
-
-		
-		<!-- /wrapper -->
-
+		  <!-- Modal image html -->
+		  <?php include('inc/imgModal.php');?>
 
 		<!-- SCROLL TO TOP -->
 		<a href="#" id="toTop"></a>
@@ -94,6 +92,7 @@
         
 		
 		<script type="text/javascript" src="assets/plugins/jquery/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="modal-script.js"></script>
 	
 		<script>
 			function openNav() {

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 		<meta charset="utf-8" />
-		<title>Restaurant Wall Design Ceracerni</title>
+		<title>Africa Design</title>
 		<meta name="description" content="" />
 		<meta name="Author" content="Nnah Kenneth [www.techagentng.com]" />
 
@@ -12,7 +12,7 @@
 
 		<!-- WEB FONTS : use %7C instead of | (pipe) -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
-		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
 		<!-- CORE CSS -->
 		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 		<link href="menu.css" rel="stylesheet" type="text/css">
@@ -26,61 +26,62 @@
 			   line-height: 1.5;
 			   font-size: 16px;
 		   }
+
+
 		</style>
 	</head>
 
-	<body class="">
+	<body class="#">
 	<?php include('inc/menu-draw.php');?>
-	<?php include('inc/menu.php');?>
+    <?php include('inc/menu.php');?>
 		<?php include('inc/head-label.php');?>
        <div class="body-wrapper grid">
 		   <!-- Side bar -->
 		   <?php include('inc/aside-menu.php');?>  
-		   <div class="heading">
-			   <h1>Restaurant Wall Designs</h1>
-		   </div>
-		   <div class="main">
-		   
+		  
+		   <div style="margin-top:" class="man">
+		   <h1 style="color:white; text-align:center;padding-top:35px;">Africa Design</h1>
 		   <div class="img-grid">
 		   <div class="image">
-			 <img src="gridImg/RESTAURANT/Bakery.jpg" data-delay="0.5s" class="myImg" id="foto">
+			 <img src="gridImg/African-Baba.jpg" data-delay="0.5s"  class="myImg" id="foto" alt="African-Design-ceracerni">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/RESTAURANT/fruit.jpg" data-delay="0.5s" class="myImg" id="foto">
+			 <img src="gridImg/African-Elephant.jpg" data-delay="0.5s"  class="myImg" id="foto" alt="African-Design-ceracerni">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/RESTAURANT/Fruits.jpg" data-delay="0.5s" class="myImg" id="foto">
+			 <img src="gridImg/African2.jpg" data-delay="0.5s"  class="myImg" id="foto" alt="African-Design-ceracerni">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/RESTAURANT/Fruitss.jpg" data-delay="0.5s" class="myImg" id="foto">
+			 <img src="gridImg/animal.jpg" data-delay="0.5s"  class="myImg" id="foto" alt="African-Design-ceracerni">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/RESTAURANT/Ice-Cream-Factory.jpg" data-delay="0.5s" class="myImg" id="foto">
+			 <img src="gridImg/African.jpg" data-delay="0.5s"  class="myImg" id="foto" alt="African-Design-ceracerni">
 		   </div>
 
 		   <div class="image" id="down">
-			 <img src="gridImg/RESTAURANT/Restaurant.jpg" data-delay="0.5s" class="myImg" id="foto">
+			 <img src="gridImg/Floral-Pattern.jpg" data-delay="0.5s"  class="myImg" id="foto" alt="African-Design-ceracerni">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/RESTAURANT/Restaurant-fruit.jpg" data-delay="0.5s" class="myImg" id="foto">
+			 <img src="gridImg/Heineken-Women.jpg" data-delay="0.5s"  class="myImg" id="foto" alt="African-Design-ceracerni">
 		   </div>
+
+		   <div class="image">
+			 <img src="gridImg/Heineken.jpg" data-delay="0.5s"  class="myImg" id="foto" alt="African-Design-ceracerni">
 		   </div>
-			 
+		   </div>			  <!-- FOOTER -->
+ 			<?php include('inc/footer.php');?>
+			  <!-- /FOOTER -->
 		   </div>
-	          	<!-- FOOTER -->
-	   <?php include('inc/footer.php');?>
-		<!-- /FOOTER -->
+	   
 	    </div>
-
-		<!-- Modal image html -->
+       <!-- Modal image html -->
 		<?php include('inc/imgModal.php');?>
-
-
+	
 		<!-- SCROLL TO TOP -->
 		<a href="#" id="toTop"></a>
        
@@ -105,6 +106,6 @@
 				$(this).addClass('active').siblings().removeClass('active')
 			})
 		  </script>
-				
+	
 	</body>
 </html>

@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 		<meta charset="utf-8" />
-		<title>Music School Designs Ceracerni</title>
-		<meta name="description" content="" />
+		<title>Music School Design</title>
+		<meta name="description" content="Music school Design" />
 		<meta name="Author" content="Nnah Kenneth [www.techagentng.com]" />
 
 		<!-- mobile settings -->
@@ -18,6 +18,7 @@
 		<link href="menu.css" rel="stylesheet" type="text/css">
 		<link href="dropp-wavee.css" rel="stylesheet" type="text/css">
 		<link href="harm-menu.css" rel="stylesheet" type="text/css" />
+		<link href="imageModal.css" rel="stylesheet" type="text/css" />
 		</head>
 		<style>
 		   .list-unstyled{
@@ -32,49 +33,48 @@
 	<?php include('inc/menu-draw.php');?>
 	<?php include('inc/menu.php');?>
 		<?php include('inc/head-label.php');?>
+	
        <div class="body-wrapper grid">
+	   <div class="heading">
+			   <h1>Music School Design</h1>
+		   </div>
 		   <!-- Side bar -->
 		   <?php include('inc/aside-menu.php');?>  
-		   <div class="heading">
-			   <h1>Musics school Wall Designs</h1>
-		   </div>
+		   
 		   <div class="main">
 		   
 		   <div class="img-grid">
 		   <div class="image">
-			 <img src="gridImg/MUSIC-SCHOOL/BTS2.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/MUSIC-SCHOOL/BTS2.jpg" class="myImg" data-delay="0.5s" id="foto" alt="music-school-design">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/MUSIC-SCHOOL/canvas-1.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/MUSIC-SCHOOL/canvas-1.jpg" class="myImg" data-delay="0.5s" id="foto" alt="music-school-design">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/MUSIC-SCHOOL/Music-school-BTS.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/MUSIC-SCHOOL/Music-school-BTS.jpg" class="myImg" data-delay="0.5s" id="foto" alt="music-school-design">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/MUSIC-SCHOOL/Music-School.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/MUSIC-SCHOOL/Music-School.jpg" class="myImg" data-delay="0.5s" id="foto" alt="music-school-design">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/MUSIC-SCHOOL/Music-School-lekki.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/MUSIC-SCHOOL/Music-School-lekki.jpg" class="myImg" data-delay="0.5s" id="foto" alt="music-school-design">
 		   </div>
 
 		   	   
 		   </div>
-			 
+			  
 		   </div>
-		   	<!-- FOOTER -->
-	   <?php include('inc/footer.php');?>
-		<!-- /FOOTER -->
+	        <!-- FOOTER -->
+			   <?php include('inc/footer.php');?>
+		       <!-- /FOOTER -->
 	    </div>
 
-		
-
-		
-		<!-- /wrapper -->
-
+		  <!-- Modal image html -->
+		  <?php include('inc/imgModal.php');?>
 
 		<!-- SCROLL TO TOP -->
 		<a href="#" id="toTop"></a>
@@ -82,6 +82,8 @@
         
 		
 		<script type="text/javascript" src="assets/plugins/jquery/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="modal-script.js"></script>
+	
 		<script>
 			function openNav() {
 				document.getElementById("mySidebar").style.width = "100%";
@@ -93,7 +95,6 @@
 				document.getElementById("main").style.marginLeft= "0";
 			}
 		</script>
-		
 		  <script type="text/javascript">
             $('aside').on('click', 'ul li', function(){
 				$(this).addClass('active').siblings().removeClass('active')

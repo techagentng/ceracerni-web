@@ -18,6 +18,7 @@
 		<link href="menu.css" rel="stylesheet" type="text/css">
 		<link href="dropp-wavee.css" rel="stylesheet" type="text/css">
 		<link href="harm-menu.css" rel="stylesheet" type="text/css" />
+		<link href="imageModal.css" rel="stylesheet" type="text/css" />
 		</head>
 		<style>
 		   .list-unstyled{
@@ -43,27 +44,27 @@
 		   <div class="img-grid">
 		   
 		   <div class="image">
-			 <img src="gridImg/TECH/Abstract1.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/TECH/Abstract1.jpg" class="myImg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/TECH/Abstract-2.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/TECH/Abstract-2.jpg" class="myImg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/TECH/Tech.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/TECH/Tech.jpg" class="myImg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/TECH/Tech2.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/TECH/Tech2.jpg" class="myImg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/TECH/Tech3.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/TECH/Tech3.jpg" class="myImg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image" id="down">
-			 <img src="gridImg/TECH/Tech4.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/TECH/Tech4.jpg" class="myImg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   
@@ -76,9 +77,21 @@
 	    </div>
 
 	
+       <!-- The Modal -->
+		<div id="myModal" class="modal">
 
-		
-		<!-- /wrapper -->
+		<!-- The Close Button -->
+		<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+		<!-- Modal Content (The Image) -->
+		<img class="modal-content" id="img01">
+
+		<!-- Modal Caption (Image Text) -->
+		<div id="caption"></div>
+		</div>
+				
+	<!-- Modal image html -->
+	<?php include('inc/imgModal.php');?>
 
 
 		<!-- SCROLL TO TOP -->
@@ -104,6 +117,40 @@
 				$(this).addClass('active').siblings().removeClass('active')
 			})
 		  </script>
-				
+			<!-- Enlarge Image JS -->
+		<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = $('.myImg');
+		var modalImg = $("#img01");
+		var captionText = document.getElementById("caption");
+		$('.myImg').click(function(){
+		modal.style.display = "block";
+		var newSrc = this.src;
+		modalImg.attr('src', newSrc);
+		captionText.innerHTML = this.alt;
+	});
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+         modal.style.display = "none";
+	}
+	
+	// Listen for outside click event
+		window.addEventListener('click', clickOutside);
+
+		// When the user clicks on <span> (x), close the modal
+        function clickOutside(e) {
+			if(e.target == myModal){
+				modal.style.display = "none";
+			}
+         
+	}
+</script>	
 	</body>
 </html>

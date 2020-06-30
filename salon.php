@@ -18,6 +18,7 @@
 		<link href="menu.css" rel="stylesheet" type="text/css">
 		<link href="dropp-wavee.css" rel="stylesheet" type="text/css">
 		<link href="harm-menu.css" rel="stylesheet" type="text/css" />
+		<link href="imageModal.css" rel="stylesheet" type="text/css" />
 		</head>
 		<style>
 		   .list-unstyled{
@@ -42,35 +43,35 @@
 		   
 		   <div class="img-grid">
 		   <div class="image">
-			 <img src="gridImg/SALON/Baby-Salon BTS.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/SALON/Baby-Salon BTS.jpg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/SALON/Baby-Salon.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/SALON/Baby-Salon.jpg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/SALON/BTS-Chinese.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/SALON/BTS-Chinese.jpg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/SALON/Salon.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/SALON/Salon.jpg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/SALON/salon4.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/SALON/salon4.jpg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image" id="down">
-			 <img src="gridImg/SALON/Salon-GhanaWeave.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/SALON/Salon-GhanaWeave.jpg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/SALON/salonn.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/SALON/salonn.jpg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/SALON/salon-woman.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/SALON/salon-woman.jpg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   </div>
@@ -81,10 +82,8 @@
 		<!-- /FOOTER -->
 	    </div>
 
-		
-
-		
-		<!-- /wrapper -->
+		<!-- Modal image html -->
+		<?php include('inc/imgModal.php');?>
 
 
 		<!-- SCROLL TO TOP -->
@@ -93,6 +92,7 @@
         
 		
 		<script type="text/javascript" src="assets/plugins/jquery/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="modal-script.js"></script>
 	
 		<script>
 			function openNav() {

@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 		<meta charset="utf-8" />
-		<title>Medical Wall Designs Ceracerni</title>
-		<meta name="description" content="" />
+		<title>Hospital Design</title>
+		<meta name="description" content="Home Room Mural wall Design" />
 		<meta name="Author" content="Nnah Kenneth [www.techagentng.com]" />
 
 		<!-- mobile settings -->
@@ -18,6 +18,7 @@
 		<link href="menu.css" rel="stylesheet" type="text/css">
 		<link href="dropp-wavee.css" rel="stylesheet" type="text/css">
 		<link href="harm-menu.css" rel="stylesheet" type="text/css" />
+		<link href="imageModal.css" rel="stylesheet" type="text/css" />
 		</head>
 		<style>
 		   .list-unstyled{
@@ -25,58 +26,57 @@
 			   line-height: 1.5;
 			   font-size: 16px;
 		   }
+
+
 		</style>
 	</head>
 
-	<body class="">
-	    <?php include('inc/menu-draw.php');?>
-		<?php include('inc/menu.php');?>
+	<body class="#">
+	<?php include('inc/menu-draw.php');?>
+    <?php include('inc/menu.php');?>
 		<?php include('inc/head-label.php');?>
        <div class="body-wrapper grid">
 		   <!-- Side bar -->
 		   <?php include('inc/aside-menu.php');?>  
-		   <div class="heading">
-			   <h1>Hospital Wall Designs</h1>
-		   </div>
-		   <div class="main">
-		   
+		  
+		   <div style="margin-top:" class="man">
+		   <h1 style="color:white; text-align:center;padding-top:35px;">Hospital Design</h1>
+		 
 		   <div class="img-grid">
 		   <div class="image">
-			 <img src="gridImg/HOSPITAL/Hospital1.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/HOSPITAL/Hospital1.jpg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/HOSPITAL/Hospital.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/HOSPITAL/Hospital.jpg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/HOSPITAL/Hospital2.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/HOSPITAL/Hospital2.jpg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/HOSPITAL/Medical.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/HOSPITAL/Medical.jpg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>		   
 		   </div>
-			 
+			  <!-- FOOTER -->
+ 			<?php include('inc/footer.php');?>
+			  <!-- /FOOTER -->
 		   </div>
-	        	<!-- FOOTER -->
-	   <?php include('inc/footer.php');?>
-		<!-- /FOOTER -->
+	   
 	    </div>
-
+       <!-- Modal image html -->
+		<?php include('inc/imgModal.php');?>
 	
-
-		
-		<!-- /wrapper -->
-
-
 		<!-- SCROLL TO TOP -->
 		<a href="#" id="toTop"></a>
        
         
 		
 		<script type="text/javascript" src="assets/plugins/jquery/jquery-2.2.3.min.js"></script>
-	    <script>
+		<script type="text/javascript" src="modal-script.js"></script>
+	
+		<script>
 			function openNav() {
 				document.getElementById("mySidebar").style.width = "100%";
 				document.getElementById("main").style.marginLeft = "250px";
@@ -87,12 +87,11 @@
 				document.getElementById("main").style.marginLeft= "0";
 			}
 		</script>
-		
 		  <script type="text/javascript">
             $('aside').on('click', 'ul li', function(){
 				$(this).addClass('active').siblings().removeClass('active')
 			})
 		  </script>
-				
+	
 	</body>
 </html>

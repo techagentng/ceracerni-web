@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 		<meta charset="utf-8" />
-		<title>Home Wall Designs Ceracerni</title>
+		<title>About Ceracerni</title>
 		<meta name="description" content="" />
 		<meta name="Author" content="Nnah Kenneth [www.techagentng.com]" />
 
@@ -21,6 +21,7 @@
 		<link href="harm-menu.css" rel="stylesheet" type="text/css" />
 		</head>
 		<style>
+		
 		  .about-wrap{
 			  background-color: red;
 			  height: 100vh;
@@ -75,7 +76,63 @@
 			  color: black;
 			  text-align: justify;
 		  }
+	
+		  .div{
+			  font-size: 2rem;
+			  color: white;
+			  font-weight: 300;
+			  text-align: justify;
+			  background-color: purple;
+		  }
+		  .div2{
+			  font-size: 2rem;
+			  color: white;
+			  font-weight: 300;
+			  text-align: justify;
+			  background-color: purple;		
+		  }
+		  .div2:hover{
+			  color: white;
+			  background-color: light-blue;
+			  text-decoration: none;
+		  }
+		  .cimg img{
+			margin-bottom: 2rem; 
+			position: relative;
+			width: 100%;
+		  }
+		  .vid{
+			  position: relative;
+			  height: 63%;
+		  }
+		  .vid iframe{
+			position: absolute;
+			top:0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		  }
+		  .div:hover{
+			  background-color: green;
+			  color: white;
+			  cursor: pointer;
+		  }
+		  .ref-container{
+			  
+			  display: grid;
+			  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+			  padding: 0 5rem;
+			  grid-gap: 2rem;
+			  margin-bottom: 10px;
+		  }
+		 .about-wrap > h1{
+			 color: white;
+			 text-align: center;
+		 }
+	
+		  /* media querries */
 		  @media only screen and (max-width: 736px){
+		
 			.cerni-abt{
 			  display: grid;
 			  grid-column: 1/3;
@@ -87,6 +144,7 @@
 			  width: 100%;
 			  margin: 0 auto;
 		  }
+		
 		  .cerni-abt img{
 			  margin:0 auto;
 			  width: 100%;
@@ -137,7 +195,18 @@
 			height: 20%;
 			z-index: 2;
 		  }
-		} 
+		  .vid{
+			  position: relative;
+			  height: 100%;
+			  padding-bottom: 56.25%; 
+		  }
+		  .vid iframe{
+			position: absolute;
+			top:0;
+			left: -30;
+			width: 100%;
+			height: auto;
+		  }
 		</style>
 	</head>
 
@@ -154,19 +223,60 @@
 
 			<div class="text-abt">
 				<h1><span class="tabout">About</span> <span class="tcera">Cera</span> <span class="tcerni">Cerni</span></h1>
-				<p><span class="ftext">C</span>era Cerni is a fast growing wall design/mural outfit established in 2014 to cater to walls in any Industry. </p>
+				<p><span class="ftext">C</span>eraCerni is a fast growing wall design/mural outfit established in 2014 to cater to walls in any Industry. </p>
 				<p>With specialties in abstract Wall Paintings, Floral Wall Murals, Cartoon Characters, Graffiti, and Wallpaper lookalike. Our designs comes in 2D, 3D, and even 5D perspectives.</p>
 				<p>Our designs are applicable to the walls in your: BabyRooms, Schools, Salon, Fashion Houses, Restaurants, Dance Schools, Music Studios, Kitchen, Churches, Game Houses, Corporate Offices, Hotels, Living & Bedrooms, Indoor & outdoors, and Under Bridges/Parks. </p>
 				<p>Check our home page for some of our clients.</p>
 			</div>
 		   </div>
-		<!-- FOOTER -->
-	   <?php include('inc/footer.php');?>
+		
+		   <h1>OUR ONLINE PRESENCE OVER THE YEARS....</h1>
+			<div class="ref-container">
+				<div class="cimg">
+				<img src="me.jpg" alt="">
+				<a href="https://www.bellanaija.com/2019/12/twitter-user-job-contract/amp/" class="div div2">When Ceracerni got the Eko Hotel deal</a>
+				</div>
+
+				<div class="cimg vid2"><iframe src="https://www.youtube.com/embed/X4RBip8Zz-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<a class="div div2">When Ceracerni painted with Big Brother Naija’s Tobi Bakre</a>
+				</div>
+
+				<div class="cimg vid2"><iframe  src="https://www.youtube.com/embed/T3zik6F88ac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<a class="div div2">When Ceracerni was on a cover Ad for TVC</a>
+				</div>
+
+				<div class="cimg vid2"><iframe src="https://web.facebook.com/plugins/video.php?href=https%3A%2F%2Fweb.facebook.com%2Fceracerni%2Fvideos%2F295857221226532%2F&show_text=0& style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+					<a class="div div2">When Ceracerni was called to TVC station for a quick interview</a>
+				</div>
+
+				<div class="cimg vid2"><iframe src="https://www.youtube.com/embed/rbt4MbXq3iM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<a class="div div2">When Ceracerni was on the cover AD for Union Bank- 2017</a>
+				</div>
+
+				<div class="cimg vid2"><iframe src="https://www.youtube.com/embed/IGLV184P69U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<a class="div div2">When TVC came to visit Ceracerni on site</a>
+				</div>
+				
+				<div class="cimg"><img src="sarrah-news.jpg" alt="sarrah-news">
+				<a class="div div2">Ceracerni's first Feature on a National Newspaper 🗞 2014</a>
+				</div>
+				<div class="cimg"><img src="sarah-kissing.jpg" alt="">
+				<a href="https://www.lindaikejisblog.com/2015/06/cera-cerni-designs-photos.html" class="div2">This was the first time Ceracerni was ever featured on any blog. And it was LindaIkejisBlog in 2015</a>
+				</div>
+				<div class="cimg"><img src="ynaija-feature.jpg" alt="">
+				<a href="https://ynaija.com/profile-sarah-sanni-high-mural-ground/" class="div2">Ceracerni featured on Ynaija in 2016</a>
+				</div>
+				<div class="cimg"><img src="mtn.jpg" alt="">
+				<a href="https://ynaija.com/profile-sarah-sanni-high-mural-ground/" class="div2">Ceracerni was Mtn yellow Woman Crush Wednesday in 2016</a>
+				</div>
+				
+				
+			</div>
+
+		 	<!-- FOOTER -->
+	  	 <?php include('inc/footer.php');?>
 		<!-- /FOOTER -->
 		 </div>
-    
-	     
-
 		<!-- SCROLL TO TOP -->
 		<a href="#" id="toTop"></a>
        	

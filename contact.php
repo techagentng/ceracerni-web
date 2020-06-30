@@ -1,66 +1,49 @@
-<?php include('inc/head.php');?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8" />
+		<title>Contact US</title>
+		<meta name="description" content="Contact Us page" />
+		<meta name="Author" content="Nnah Kenneth [www.techagentng.com]" />
 
-	<!--
-		AVAILABLE BODY CLASSES:
-		
-		smoothscroll 			= create a browser smooth scroll
-		enable-animation		= enable WOW animations
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
-		bg-grey					= grey background
-		grain-grey				= grey grain background
-		grain-blue				= blue grain background
-		grain-green				= green grain background
-		grain-blue				= blue grain background
-		grain-orange			= orange grain background
-		grain-yellow			= yellow grain background
-		
-		boxed 					= boxed layout
-		pattern1 ... patern11	= pattern background
-		menu-vertical-hide		= hidden, open on click
-		
-		BACKGROUND IMAGE [together with .boxed class]
-		data-background="assets/images/boxed_background/1.jpg"
-	-->
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="menu.css" rel="stylesheet" type="text/css">
+		<link href="dropp-wavee.css" rel="stylesheet" type="text/css">
+		<link href="harm-menu.css" rel="stylesheet" type="text/css" />
+		<link href="imageModal.css" rel="stylesheet" type="text/css" />
+		</head>
+		<style>
+		   .list-unstyled{
+			   max-width: 95%;
+			   line-height: 1.5;
+			   font-size: 16px;
+		   }
+		   
+			   aside{
+				   display: none;
+			   }
+		</style>
+	</head>
+
 	<body class="smoothscroll enable-animation">
+	<?php include('inc/menu-draw.php');?>
 	<?php include('inc/menu.php');?>
+	<?php include('inc/head-label.php');?>
 	<!-- menu draw -->
-		<!-- Mobile qrapper -->
-<div class="mobile-wrapper">
-			<div id="mySidebar" class="sidebar">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-			<div class="side-nav mdl-shadow--4dp">
+		<!-- Mobile rapper -->
 
-			<div id="explore-slideto" class="side-nav-head">
-				<a href="index.php" style="color:black;border:3px solid red;">HOME MENU</a>
-			</div>
-			<div id="explore-slideto" class="side-nav-head">
-				<a href="#" style="color:black;border:3px solid red;">Gallery</a>
-			</div>
-			<div id="explore-slideto" class="side-nav-head">
-				<a href="#" style="color:black;border:3px solid red;">About US</a>
-			</div>
-
-          
-
-</div>
-			
-			</div>
-
-			<div id="main">
-			<button class="openbtn" onclick="openNav()">☰ Design Categories</button> 
-			</div>
-			<?php include('inc/menu.php');?>
-
-		</div>
 		<!-- wrapper -->
 		<div id="wrapper">
-			
-			<!-- CALLOUT -->
-			
-			<!-- /CALLOUT -->	
+			 <?php include('inc/aside-menu.php');?>  
 		
-					<!-- WORK -->
-			
 			<!--All the form content of this page is in this section -->
 					<!-- -->
 			<section style="margin-top:55px;">
@@ -69,7 +52,7 @@
 					<div class="row">
 
 						<!-- FORM -->
-						<div class="col-md-9 col-sm-9">
+						<div style="margin-bottom:25px;" class="col-md-9 col-sm-9">
 
 							<h3>Drop us a line or just say <strong><em>Hello!</em></strong></h3>
 
@@ -120,7 +103,7 @@
 
 
 							<form action="php/contact.php" method="post" enctype="multipart/form-data">
-								<fieldset>
+								<fieldset style="margin-bottom:20px;">
 									<input type="hidden" name="action" value="contact_send" />
 
 									<div class="row">
@@ -139,15 +122,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="row">
-										<div class="form-group">
-											<div class="col-md-8">
-												<label for="contact:subject">Subject *</label>
-												<input required type="text" value="" class="form-control" name="contact[subject][required]" id="contact:subject">
-											</div>
-											
-										</div>
-									</div>
+									
 									<div class="row">
 										<div class="form-group">
 											<div class="col-md-12">
@@ -226,7 +201,7 @@
 
 
 		<!-- SCROLL TO TOP -->
-		<a href="#" id="toTop"></a>
+		
 
 
 		<!-- JAVASCRIPT FILES -->

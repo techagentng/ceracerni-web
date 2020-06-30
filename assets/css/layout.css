@@ -3496,46 +3496,6 @@ section.dark.page-header ul.page-options a {
 	background: #fefefe;
 	z-index: 100000;	
 }
-/* loading dots */
-.loaddots span{
-	width: 25px;
-	height: 25px;
-	margin: 0 auto;
-	background-color: #ffd957;
-	border-radius: 50%;
-	display: inline;
-	animation-name: dots;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
-	position: absolute;
-	top: 400px;
-    bottom: 0;
-	right: 0; 
-	left: -10px;
-}
-.loaddots span:nth-child(2){
-	background-color: #57ffa0;
-	animation-delay: 0.4s;
-	margin-right: 550px;
-}
-.loaddots span:nth-child(3){
-	background-color: red;
-	animation-delay: 0.8s;
-	margin-right: 470px;
-}
-
-@keyframes dots{
-	50%{
-		opacity: 0;
-		transform: scale(0.7) translateY(10px);
-
-	}
-}
-
-/*Water droplet  */
-
-
 
 
 /** Misc

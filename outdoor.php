@@ -18,6 +18,7 @@
 		<link href="menu.css" rel="stylesheet" type="text/css">
 		<link href="dropp-wavee.css" rel="stylesheet" type="text/css">
 		<link href="harm-menu.css" rel="stylesheet" type="text/css" />
+		<link href="imageModal.css" rel="stylesheet" type="text/css" />
 		</head>
 		<style>
 		   .list-unstyled{
@@ -42,31 +43,31 @@
 		   
 		   <div class="img-grid">
 		   <div class="image">
-			 <img src="gridImg/OUTDOOR/Bicycle-park.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/OUTDOOR/Bicycle-park.jpg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/OUTDOOR/East-Travels.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/OUTDOOR/East-Travels.jpg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/OUTDOOR/Optical-Illusion.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/OUTDOOR/Optical-Illusion.jpg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/OUTDOOR/outdoor.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/OUTDOOR/outdoor.jpg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/OUTDOOR/outdoor2.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/OUTDOOR/outdoor2.jpg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image" id="down">
-			 <img src="gridImg/OUTDOOR/outdoor3.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/OUTDOOR/outdoor3.jpg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 
 		   <div class="image">
-			 <img src="gridImg/OUTDOOR/POLO-club.jpg" data-delay="0.5s" id="foto">
+			 <img src="gridImg/OUTDOOR/POLO-club.jpg" data-delay="0.5s" class="myImg" id="foto">
 		   </div>
 		   </div>
 			 
@@ -76,10 +77,8 @@
 		<!-- /FOOTER -->
 	    </div>
 
-	
-
-		
-		<!-- /wrapper -->
+		<!-- Modal image html -->
+		<?php include('inc/imgModal.php');?>
 
 
 		<!-- SCROLL TO TOP -->
@@ -88,7 +87,7 @@
         
 		
 		<script type="text/javascript" src="assets/plugins/jquery/jquery-2.2.3.min.js"></script>
-	
+	    <script type="text/javascript" src="modal-script.js"></script>
 		<script>
 			function openNav() {
 				document.getElementById("mySidebar").style.width = "100%";
