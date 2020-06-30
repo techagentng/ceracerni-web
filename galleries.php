@@ -33,7 +33,7 @@
 				margin: 90px auto 0 auto;
 				position: relative;
 				transform: translateY(-50%, -50%);
-				font-size: 96px;
+				font-size: 56px;
 				color: white;
 		   }
 		   h1 span{
