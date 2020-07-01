@@ -234,6 +234,23 @@ div .margin{
 .icon-play:before {
   cursor: pointer;
 }
+.home-menu-drop{
+	content: '';
+    background: url(first-drop.png) no-repeat center center/cover;
+	background-size: contain;
+	left: 0;
+    top: 0;
+	width: 140px;
+	height: 230px;
+	background-color: transparent;
+	position: absolute;
+	top: 0;
+	left: 400px;
+	z-index: 9;
+}
+.menu-grid-box:hover > .home-menu-drop{
+	display: none;
+}
 @media only screen and (max-width: 736px) {
 	.static-_right_bottom{
 		transition: transform 0.2s ease;
@@ -269,6 +286,7 @@ div .margin{
 		data-background="assets/images/boxed_background/1.jpg"
 	-->
 	<body class="smoothscroll enable-animation">
+	
      <!-- TRANSPARENT OVERLAY -->
 			<div class="rev_slider_cover">
 			<!-- START REVOLUTION SLIDER 5.2.0 fullscreen mode -->
@@ -1042,7 +1060,7 @@ div .margin{
 			<!-- END REVOLUTION SLIDER -->
 			</div>
             
-			 	
+			 
 		       <!-- partial:index.partial.html -->
 			   
 			   <?php include('inc/menu.php');?>		
