@@ -16,8 +16,8 @@
 				</div>
 			</div>				  
 	</div>
-		              <!------  main menu----------->
-		
+			
+		<!------  main menu----------->		
 			<div class="menu-grid-box flexit">
 				<ul class="menu">
 					  <li>
@@ -26,7 +26,7 @@
 				</ul>
 				<ul class="menu flexit" style="margin-left:320px;">
 					  <li>
-						<a href="about.php" style="width:130px;background-color: #000;"> About us</a>						
+						<a href="about.php" class="tryme" style="width:130px;background-color: #000;"> About us</a>						
 					  </li>					                   				   
 				</ul>
 				<ul class="menu flexit" style="margin-left:40px;">
@@ -40,7 +40,9 @@
 						<a href="contact.php" style="width:130px;background-color: red;"> Contact Us</a>						
 					  </li>				                   				   
 				</ul>            
-				
+			
+			<!--drop for home menu  -->
+			<div class="home-menu-drop"></div>
 			</div>
 			
 			
